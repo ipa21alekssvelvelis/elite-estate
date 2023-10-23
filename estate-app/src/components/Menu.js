@@ -3,7 +3,7 @@ import '../App.css';
 import Logout from './Logout.js';
 import Cookies from 'js-cookie';
 
-function Header() {
+function Menu() {
   const isAuthenticated = Cookies.get('roleID');
   const currentPath = window.location.pathname;
 
@@ -36,4 +36,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Menu;
