@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: auto;
+   background-image: url(/assets/jaunakais.jpg);
+   background-size: cover;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.topHeading{
+    width: 100%;
+    height: 170px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+.selaha{
+    height: 100px;
+}
+.stripinaBox{
+width:100%;
+    height: 30px;
+margin: 5 auto;
+display: flex;
+}
+.stripinaBox2{
+    width:100%;
+        height: 40px;
+    margin: 5 auto;
+    display: flex;
+    }
+.stripina2{
+    margin: auto;
+    width: 100%;
+    border: 2px white solid
+}
+.stripina{
+    margin: auto;
+    width: 400px;
+    border: 3px #FFB000 solid;
+}
+.stripina3{
+    margin: auto;
+    width: 70%;
+    border: 3px #FFB000 solid;
+}
+.mainHeadingTextBox{
+    justify-content: center;
+    height: 115px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.leftHeading{
+    width: 270px;
+    height: 100%;
+    background-color: transparent;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    line-height: 120px;
+}
+.leftHeading span{
+    margin-left: 171px;
+}
+.midHeading{
+    width: 110px;
+ height: 100%;
+ background-color: transparent;
+ font-family: 'Marck Script', cursive;
+ color: #FFB000;
+ font-size: 110px;
+ text-align: center;
+ line-height: 170px;
+}
+.rightHeading{
+    width: 270px;
+    height: 100%;
+    background-color: transparent;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    line-height: 170px;
+}
+.rightHeading span{
+    margin-left: -143px;
+}
+
+.loginBox{
+    width: 370px;
+    height: 480px;
+    margin: 20px auto;
+    background-color: #004225;
+    border-radius: 11px;
+    border: #FFB000 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+}
+.namebox{
+    width: 370px;
+    height: 350px;
+    margin: 20px auto;
+    background-color: #004225;
+    border: #FFB000 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+}
+.buttonbox{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.previewBox{
+    width: 950px;
+    height: 480px;
+    margin: 20px auto;
+    background-color: #004225;
+    border-radius: 11px;
+    border: #FFB000 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.preview{
+    width: 1000px;
+    height: 480px;
+    margin: 20px auto;
+    background-image: url(/assets/jaunakais.jpg);
+    background-size: cover;
+    border: #FFB000 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: center;
+    align-items: left;
+}
+.photobox{
+    width: 500px;
+    height: 250px;
+    margin: 40px;
+    margin-bottom: -5px;
+    background-color: black;
+    border: #FFB000 3px solid;
+}
+.miniphotos{
+    width: 450px;
+    max-width: 450px;
+    height: 70px;
+    margin: 20px auto;
+    background-color: black;
+    border: #FFB000 1px solid;
+    display: flex;
+    flex-direction: row;
+}
+.miniimage{
+    width: 55px;
+    height: 55px;
+    margin: auto;
+    background-color: black;
+    border: white 1px solid;
+}
+.miniimage:hover{
+    border: white 4px solid;
+}
+.infoBox{
+    width: 1000px;
+    height: 550px;
+    margin: 20px auto;
+    background-color: #004225;
+    border-radius: 11px;
+    border: #FFB000 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: top;
+    align-items: left;
+}
+
+.loginHeading{
+    width: 100%;
+    height: 60px;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+.loginText{
+    width: 25%;
+    height: 60px;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+.logintext2{
+    width: 50%;
+    height: 30px;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.houseinfo{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.loginMidBox{
+    width: 320px;
+    height: 270px;
+    border-bottom: #FFB000 3.6px solid;
+    margin: auto;
+    border-radius: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.inputGroup{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px auto;
+}
+.inputGroup1{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.inputGroup2{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 36px auto;
+}
+
+
+.inputHeading{
+    width: 100%;
+    height: 40px;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 20px;
+}
+.inputField{
+    width: 20%;
+    height: 28px;
+    margin: 12px auto;
+    margin-right: 50px;
+    background-color: #004225;
+    border: none;
+    border-top: #FFB000 4px solid;
+    border-radius: 3px;
+    filter: drop-shadow(2px 5px 6px #000000);
+    color: white;
+
+
+}
+.loginButtonBox{
+    width: 100%;
+    height: 109px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.submitButton{
+    width: 200px;
+    height: 42px;
+    background-color: #004225;
+    border: none;
+    border-bottom: #FFB000 4px solid;
+    border-radius: 5px;
+    filter: drop-shadow(2px 5px 6px #000000);
+    margin: 10px auto;
+    color: white;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+.ssubmitButton{
+    width: 40%;
+    height: 35px;
+    background-color: #004225;
+    border: none;
+    border-bottom: #FFB000 4px solid;
+    border-radius: 5px;
+    filter: drop-shadow(2px 5px 6px #000000);
+    margin: 10px auto;
+    color: white;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.registerCall{
+    width: 100%;
+    height: 20px;
+display: flex;
+flex-wrap: wrap;
+}
+a{
+    color: white;
+    font-size: 10px;
+    font-family: 'Jockey One', sans-serif;
+margin: 0 auto;
+
+}
+
+.menuButton{
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+    background-color: #004225;
+    filter: drop-shadow(2px 3px 3px #FFB000);
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    color: white;
+    font-size: 80px;
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    line-height: 65px;
+    cursor: pointer;
+
+}
+.menuBar{
+    width: 400px;
+    height: 100%;
+    background-color: #004225;
+    position: fixed;
+    border-right: #FFB000 10px solid;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: none;
+}
