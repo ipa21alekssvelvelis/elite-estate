@@ -282,7 +282,18 @@ display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
-
+.previewBox{
+    width: 950px;
+    height: 480px;
+    margin: 20px auto;
+    background-color: #004225;
+    border: #FFB000 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
 .submitButton{
     width: 200px;
     height: 42px;
@@ -375,6 +386,11 @@ img{
     height: auto;
     min-height: 700px;
     justify-content: space-between;
+ }
+ .previewBox{
+    width: 80%;
+    height: auto;
+    min-height: 700px;
  }
  .photobox{
     width: 90%;
