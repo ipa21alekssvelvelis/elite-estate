@@ -2,16 +2,16 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    display: flex;
+}
 .container{
     width: 100vw;
-    height: auto;
    background-image: url(/assets/jaunakais.jpg);
    background-size: cover;
    display: flex;
    flex-wrap: wrap;
 }
-
 .topHeading{
     width: 100%;
     height: 170px;
@@ -30,7 +30,7 @@ display: flex;
 }
 .stripinaBox2{
     width:100%;
-        height: 40px;
+        height: 10%;
     margin: 5 auto;
     display: flex;
     }
@@ -108,8 +108,9 @@ display: flex;
     flex-direction:column;
 }
 .namebox{
-    width: 370px;
-    height: 350px;
+    width: 70%;
+    height: 70%;
+    min-height: 300px;
     margin: 20px auto;
     background-color: #004225;
     border: #FFB000 3px solid;
@@ -123,44 +124,38 @@ display: flex;
     display: flex;
     flex-direction: row;
 }
-.previewBox{
-    width: 950px;
-    height: 480px;
-    margin: 20px auto;
-    background-color: #004225;
-    border-radius: 11px;
-    border: #FFB000 3px solid;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-}
 .preview{
-    width: 1000px;
-    height: 480px;
+    width: 50%;
+    height: auto;
     margin: 20px auto;
     background-image: url(/assets/jaunakais.jpg);
     background-size: cover;
     border: #FFB000 3px solid;
     display: flex;
     flex-wrap: wrap;
-    flex-direction:column;
+    flex-direction:row;
     justify-content: center;
-    align-items: left;
+    align-items: center;
 }
 .photobox{
-    width: 500px;
-    height: 250px;
-    margin: 40px;
+    width: 80%;
+    height: 40%;
+    margin: 20px;
     margin-bottom: -5px;
     background-color: black;
     border: #FFB000 3px solid;
 }
+.photopart{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 .miniphotos{
-    width: 450px;
-    max-width: 450px;
-    height: 70px;
+    width: 70%;
+    height: 15%;
     margin: 20px auto;
     background-color: black;
     border: #FFB000 1px solid;
@@ -168,8 +163,8 @@ display: flex;
     flex-direction: row;
 }
 .miniimage{
-    width: 55px;
-    height: 55px;
+    width: 15%;
+    height: 80%;
     margin: auto;
     background-color: black;
     border: white 1px solid;
@@ -193,7 +188,7 @@ display: flex;
 
 .loginHeading{
     width: 100%;
-    height: 60px;
+    height: 15%;
     font-family: 'Jockey One', sans-serif;
     color: white;
     font-size: 35px;
@@ -209,7 +204,7 @@ display: flex;
 }
 .logintext2{
     width: 50%;
-    height: 30px;
+    height: 30%;
     font-family: 'Jockey One', sans-serif;
     color: white;
     font-size: 15px;
@@ -333,7 +328,9 @@ a{
 margin: 0 auto;
 
 }
-
+img{
+    width: 20%;
+}
 .menuButton{
     width: 65px;
     height: 65px;
@@ -361,3 +358,98 @@ margin: 0 auto;
     border-bottom-right-radius: 15px;
     display: none;
 }
+@media only screen and (max-width: 600px) {
+ .container{
+    width: 400px;
+ }
+ img{
+    width: 60%;
+    height: 50%;
+ }
+ img.selaha{
+    width: 50%;
+    height: 40%;
+ }
+ .preview{
+    width: 80%;
+    height: auto;
+    min-height: 700px;
+    justify-content: space-between;
+ }
+ .photobox{
+    width: 90%;
+    height: 40%;
+ }
+ .photopart{
+    width: 100%;
+    height: 50%;
+ }
+.loginBox{
+    width: 80%;
+}
+.infoBox{
+    width: 80%;
+}
+.stripina{
+    width: 70%;
+}
+.stripinaBox{
+    width: 100%;
+}
+.stripina2{
+    width: 100%;
+}
+.stripinaBox2{
+    width: 100%;
+}
+.loginHeading{
+    font-size: 15px;
+}
+.namebox{
+    height: 90%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.logintext2{
+    height: 30%;
+    font-size: 13px;
+}
+.ssubmitButton{
+    font-size: 12px;
+}
+.loginText{
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 5%;
+    width: 100%;
+}
+.miniphotos{
+    width: 90%;
+}
+.inputField{
+    width: 50%;
+    margin: auto;
+}
+.menuButton{
+    width: 15%;
+    height: 5%;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainHeadingTextBox{
+    display: flex;
+    align-items: center;
+}
+.topHeading{
+    height: 5%;
+}
+.loginHeading{
+    height: 5%;
+}
+  }
