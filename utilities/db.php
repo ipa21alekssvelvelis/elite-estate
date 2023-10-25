@@ -10,7 +10,7 @@ class Database{
         $this->host = "localhost";
         $this->user = "root";
         $this->pass = "root";
-        $this->dbname = "realestate";
+        $this->dbname = "estate";
         $this->conn = new mysqli ($this->host, $this->user, $this->pass, $this->dbname);
     }
 
