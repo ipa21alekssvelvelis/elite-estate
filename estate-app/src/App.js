@@ -1,11 +1,12 @@
 import './styles/App.css';
+import IndexList from './components/IndexList.js';
+import HouseView from './components/HouseView.js';
+import OpenDivs from './components/OpenDivs.js'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>defefefef</p>
-      </header>
+    <div className="container">
+      <HouseView />
     </div>
   );
 }
