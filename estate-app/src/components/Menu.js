@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css';
+import '../styles/App.css';
 import Logout from './Logout.js';
 import Cookies from 'js-cookie';
 
