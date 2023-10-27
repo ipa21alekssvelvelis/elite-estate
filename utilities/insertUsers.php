@@ -9,19 +9,31 @@ header('Access-Control-Allow-Headers: Content-Type');
 $db = new Database();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents("php://input"));
-    // $titleToAdd = htmlspecialchars($data->task);
-    // $descToAdd = htmlspecialchars($data->desc);
-    // $dueDate = $data->date;
-    // $createBy = $data->roleID;
-    // $createdAt = date('Y-m-d');
+    $usernameToAdd = htmlspecialchars($data->user);
+    $passwordToAdd = password_hash($data->password, PASSWORD_DEFAULT);
+    $currentUsers = $db->selectUsers();
+    $usernameClear = true; // Assume the username is clear by default
 
-    // if ($db->InsertTasks($titleToAdd, $descToAdd, $dueDate, 0, $createdAt,$createBy)) {
-    //     echo json_encode([
-    //         'message' => 'Inserted successfully',
-    //         'data'=> $data,
-    //     ]);
-    // } else {
-    //     echo json_encode(['error' => 'Issues inserting']);
-    // }
+    foreach ($currentUsers as $userData) {
+        if ($userData["username"] == $usernameToAdd) {
+            $usernameClear = false; // Username is already taken
+            break;
+        }
+    }
+
+    if (!$usernameClear) {
+        echo json_encode([
+            'error' => 'Username taken',
+        ]);
+    } else {
+        if ($db->insertUser($usernameToAdd, $passwordToAdd)) {
+            echo json_encode([
+                'message' => 'Inserted successfully',
+                'data' => $data,
+            ]);
+        } else {
+            echo json_encode(['error' => 'Issues inserting']);
+        }
+    }
 }
 ?>

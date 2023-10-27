@@ -1,27 +1,30 @@
 <?php
 include_once 'db.php';
 
+
+
+header("Access-Control-Allow-Origin: http://localhost:3000");
+header("Access-Control-Allow-Methods: POST");
+header("Access-Control-Allow-Headers: Content-Type");
 header('Content-Type: application/json');
-header('Access-Control-Allow-Origin: http://localhost:3000');
-header('Access-Control-Allow-Methods: POST');
-header('Access-Control-Allow-Headers: Content-Type');
 
 $db = new Database();
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents("php://input"));
-    // $titleToAdd = htmlspecialchars($data->task);
-    // $descToAdd = htmlspecialchars($data->desc);
-    // $dueDate = $data->date;
-    // $createBy = $data->roleID;
-    // $createdAt = date('Y-m-d');
+    $nameToAdd = htmlspecialchars($data->name);
+    $surnameToAdd = htmlspecialchars($data->surname);
+    $emailToAdd = $data->email;
+    $phoneToAdd = $data->phone;
+    $personasKodsToAdd = $data->PersonasKods;
+    $userID = $data->isAuthenticated;
 
-    // if ($db->InsertTasks($titleToAdd, $descToAdd, $dueDate, 0, $createdAt,$createBy)) {
-    //     echo json_encode([
-    //         'message' => 'Inserted successfully',
-    //         'data'=> $data,
-    //     ]);
-    // } else {
-    //     echo json_encode(['error' => 'Issues inserting']);
-    // }
-}
+        $db->insertPersonalData($nameToAdd,$surnameToAdd,$personasKodsToAdd,$phoneToAdd,$emailToAdd,$userID);
+        if ($db->insertPersonalData($nameToAdd, $surnameToAdd, $personasKodsToAdd, $phoneToAdd, $emailToAdd, $userID)) {
+            echo json_encode([
+                'message' => 'Inserted successfully',
+            ]);
+        } else {
+            echo json_encode(['error' => 'Issues inserting']);
+        }
+    }
 ?>

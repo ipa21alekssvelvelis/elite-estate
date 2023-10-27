@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/App.css';
 import { useUser } from './UserContext';
 
 function Logout() {
@@ -11,7 +10,7 @@ function Logout() {
   };
 
   return (
-    <a onClick={handleLogout}>Logout</a>
+    <a className='routerButtons' onClick={handleLogout}>LOGOUT</a>
   );
 }
 

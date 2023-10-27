@@ -6,27 +6,28 @@ const UserContext = createContext();
 
 export function UserProvider({ children }) {
     const [userInfo, setUserInfo] = useState(() => {
-    const cookieUserID = Cookies.get('roleID');
-
+    const cookieUserID = Cookies.get('userID');
+    const cookieSellerID = Cookies.get('sellerID');
+  
     if (cookieUserID) {
-      return { roleID: parseInt(cookieUserID) };
+      return { userID: parseInt(cookieUserID), sellerID: cookieSellerID };
     } else {
-      return { roleID: null };
+      return { userID: null, sellerID: null };
     }
   });
-
-  const Login = (roleID) => {
-    // console.log("Setting roleID and cookie:", userID);
-    Cookies.set('roleID', roleID.toString());
-    setUserInfo({ roleID });
-    // console.log("Local storage and cookie operation successful:", userID);
+  
+  const Login = (userID, sellerID) => {
+    Cookies.set('userID', userID.toString());
+    Cookies.set('sellerID', sellerID.toString());
+    setUserInfo({ userID, sellerID });
   };
-
+  
   const Logout = () => {
-    setUserInfo(null);
-    Cookies.remove('roleID');
+    setUserInfo({ userID: null, sellerID: null });
+    Cookies.remove('userID');
+    Cookies.remove('sellerID');
   };
-
+  
   return (
     <UserContext.Provider value={{ userInfo, Login, Logout }}>
       {children}

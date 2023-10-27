@@ -64,7 +64,7 @@ class Database{
     }
    
     function insertUser($username, $password){
-        $result = $this->("INSERT INTO users (`Username`,`Password`) VALUES ('$username', '$password')");
+        $result = $this->insert("INSERT INTO users (`Username`,`Password`) VALUES ('$username', '$password')");
         if($result){
             return $result;
         }else{

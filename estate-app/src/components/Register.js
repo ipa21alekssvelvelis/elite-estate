@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/App.css';
+import '../styles/stylesReg.css';
 
 function Register(){
     const [user, setUser] = useState('');
@@ -7,17 +7,129 @@ function Register(){
     const [confirm, setConfirm] = useState('');
     const [errors, setErrors] = useState({});
 
-    handleUsernameChange = (e) => {
+    const handleUsernameChange = (e) => {
         setUser(e.target.value);
     }
 
-    handlePasswordcHANGE = (e) => {
+    const handlePasswordChange = (e) => {
         setPass(e.target.value);
     }
 
-    handleConfirmChange = (e) => {
+    const handleConfirmChange = (e) => {
         setConfirm(e.target.value);
     }
+
+
+    const handleSubmit = async (event) => {
+         event.preventDefault();
+        const trimmedUsername = user.trim();
+        const trimmedPassword =  pass.trim();
+        const trimmedConfirm =  confirm.trim();
+        const newErrors = {};
+
+        if(!trimmedUsername){
+          newErrors.user = 'Username is required.';
+        }
+
+        if(!trimmedPassword){
+          newErrors.pass = 'Password is required.';
+          newErrors.match = "";
+        }
+
+        if(!trimmedConfirm){
+          newErrors.confirm = 'Confirm is required.';
+          newErrors.match = "";
+        }
+
+        if (trimmedConfirm !== trimmedPassword) {
+          newErrors.match = "Passwords don't match";
+        }
+
+        if (Object.keys(newErrors).length === 0) {
+        try {
+          const response = await fetch('http://localhost:8888/datubazes/estates/utilities/insertUsers.php', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ user: user, password: pass }),
+          });
+    
+          if (response.ok) {
+            const data = await response.json();
+            if (data.error) {
+              console.error('Error:', data.error);
+              newErrors.user = 'Username taken';
+              setErrors(newErrors);
+            } else {
+              console.log('Data submitted successfully');
+              console.log(data);
+              window.location.href = 'http://localhost:3000/login';
+            }
+          } else {
+            console.error('Submission failed');
+          }
+        } catch (error) {
+          console.error('Error:', error);
+          newErrors.taken = 'Username taken';
+          setErrors(newErrors);
+        }
+      }else{
+        setErrors(newErrors);
+      }
+    }
+
+    return(
+        <>
+{/* <Menu/> */}
+<form className="loginBox" onSubmit={handleSubmit}>
+      <div className="loginHeading">REGISTER</div>
+      <div className="loginMidBox">
+        <div className="inputGroup1">
+          <div className="inputHeading">USERNAME</div>
+          <input 
+          className="inputField" 
+          type="text" 
+          id='username' 
+          name='username'
+          onChange={handleUsernameChange}/>
+          {errors.user && <p className="error" id='usererror'>{errors.user}</p>}
+          {errors.taken && <p className="error" id='usererror'>{errors.taken}</p>}
+        </div>
+        <div className="inputGroup2">
+          <div className="inputHeading">PASSWORD</div>
+          <input 
+          className="inputField" 
+          type="password" 
+          id='password' 
+          name='password'
+          onChange={handlePasswordChange}/>
+          {errors.pass && <p className="error" id='passerror'>{errors.pass}</p>}
+        </div>
+        <div className="inputGroup2">
+          <div className="inputHeading">REPEAT PASSWORD</div>
+          <input 
+          className="inputField" 
+          type="password" 
+          id='confirmpass' 
+          name='confirmpass'
+          onChange={handleConfirmChange}/>
+          {errors.confirm && <p className="error" id='confirmerror'>{errors.confirm}</p>}
+        </div>
+      </div>
+      <div className="loginButtonBox">
+      {errors.match && <p className="error" id='matcherror'>{errors.match}</p>}
+        <button className="submitButton" type='submit'>REGISTER</button>
+        
+        <div className="registerCall">
+          <a href={`/`}>ALREADY HAVE AN ACCOUNT?</a>
+        </div>
+      </div>
+    </form>
+        </>
+    );
+    
 }
+
 
 export default Register;
