@@ -29,55 +29,55 @@ function HouseView() {
         </div>
       </div>
 
-      <div class="midContainer">
-        <div class="leftContainer">
-          <section class="imageBox swiper mySwiper">
-            <div class="wrapper swiper-wrapper">
-              <div class="slide">
-                <img src={image2} alt="" class="image" />
+      <div class="midContainerMAIN2">
+        <div class="leftContainerMAIN2">
+          <section class="imageBoxMAIN2 swiperMAIN2 mySwiperMAIN2">
+            <div class="wrapperMAIN2 swiper-wrapperMAIN2">
+              <div class="slideMAIN2">
+                <img src={image2} alt="" class="imageMAIN2" />
               </div>
             </div>
           </section>
-          <div class="underImg">
-            <a href="" class="smallImageBox"></a>
-            <a href="" class="smallImageBox"></a>
-            <a href="" class="smallImageBox"></a>
-            <a href="" class="smallImageBox"></a>
-            <a href="" class="smallImageBox"></a>
+          <div class="underImgMAIN2">
+            <a href="" class="smallImageBoxMAIN2"></a>
+            <a href="" class="smallImageBoxMAIN2"></a>
+            <a href="" class="smallImageBoxMAIN2"></a>
+            <a href="" class="smallImageBoxMAIN2"></a>
+            <a href="" class="smallImageBoxMAIN2"></a>
           </div>
         </div>
 
-        <div class="rightContainer">
-          <div class="box">
-            <div class="boxHeading">MEGA MANSION FORTNITE</div>
-            <div class="descriptionBox">
-              <div class="descTextBox">
+        <div class="rightContainerMAIN2">
+          <div class="boxMAIN2">
+            <div class="boxHeadingMAIN2">MEGA MANSION FORTNITE</div>
+            <div class="descriptionBoxMAIN2">
+              <div class="descTextBoxMAIN2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
                 omnis sit dicta exercitationem mollitia id! Accusamus incidunt,
                 quo illo facere at, a assumenda saepe autem qui corrupti sint quae
                 eligendi?
               </div>
             </div>
-            <div class="aboutBox">
-              <div class="singleBox">
-                <div class="aboutNameHead">FULL NAME:</div>
-                <div class="aboutName">JENATOLIJS IVANOVS</div>
+            <div class="aboutBoxMAIN2">
+              <div class="singleBoxMAIN2">
+                <div class="aboutNameHeadMAIN2">FULL NAME:</div>
+                <div class="aboutNameMAIN2">JENATOLIJS IVANOVS</div>
               </div>
-              <div class="singleBox">
-                <div class="aboutNameHead">PRICE:</div>
-                <div class="aboutName">13 000 000 $</div>
+              <div class="singleBoxMAIN2">
+                <div class="aboutNameHeadMAIN2">PRICE:</div>
+                <div class="aboutNameMAIN2">13 000 000 $</div>
               </div>
-              <div class="singleBox">
-                <div class="aboutNameHead">AVAILABLE VISIT:</div>
-                <div class="aboutName">YES</div>
+              <div class="singleBoxMAIN2">
+                <div class="aboutNameHeadMAIN2">AVAILABLE VISIT:</div>
+                <div class="aboutNameMAIN2">YES</div>
               </div>
             </div>
 
-            <div class="buttonBox">
-              <button className="button" onClick={OpenDivs.openDiv}>
+            <div class="buttonBoxMAIN2">
+              <button className="buttonMAIN2" onClick={OpenDivs.openDiv}>
                 ADDITIONAL INFO
               </button>
-              <button className="button" onClick={OpenDivs.openDiv2}>
+              <button className="buttonMAIN2" onClick={OpenDivs.openDiv2}>
                 CONTACT SELLER
               </button>
             </div>

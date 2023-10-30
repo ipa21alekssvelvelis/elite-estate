@@ -17,7 +17,7 @@
 }
 
 
-.topHeading {
+.topHeadingMAIN {
 	width: 100%;
 	height: 170px;
 	background-color: transparent;
@@ -26,7 +26,7 @@
     overflow-x: hidden;
 }
 
-.mainHeadingTextBox {
+.mainHeadingTextBoxMAIN {
 	height: 150px;
 	margin: auto;
 	display: flex;
@@ -34,7 +34,7 @@
     
 }
 
-.mainHeadingTextBox2 {
+.mainHeadingTextBox2MAIN {
 	height: 100%;
 	margin: auto;
 	display: flex;
@@ -43,134 +43,21 @@
 	align-items: center;
     
 }
-
-.leftHeading {
-	width: 270px;
-	height: 100%;
-	background-color: transparent;
-	font-family: 'Jockey One', sans-serif;
-	color: white;
-	font-size: 80px;
-	text-align: center;
-	line-height: 120px;
-}
-
-.leftHeading span {
-	margin-left: 171px;
-}
-
-.leftHeadingSmall {
-	width: 46px;
-	height: 100%;
-	background-color: transparent;
-	font-family: 'Jockey One', sans-serif;
-	color: white;
-	font-size: 60px;
-	text-align: center;
-	line-height: 90px;
-}
-
-.leftHeadingSmall span {
-	margin-left: -4px;
-}
-
-.midHeading {
-	width: 110px;
-	height: 100%;
-	background-color: transparent;
-	font-family: 'Marck Script', cursive;
-	color: #FFB000;
-	font-size: 110px;
-	text-align: center;
-	line-height: 170px;
-}
-
-.midHeadingSmall {
-	width: 70PX;
-	height: 100%;
-	background-color: transparent;
-	font-family: 'Marck Script', cursive;
-	color: #FFB000;
-	font-size: 90px;
-	text-align: center;
-	line-height: 140px;
-}
-
-.rightHeading {
-	width: 270px;
-	height: 100%;
-	background-color: transparent;
-	font-family: 'Jockey One', sans-serif;
-	color: white;
-	font-size: 80px;
-	text-align: center;
-	line-height: 170px;
-}
-
-.rightHeading span {
-	margin-left: -143px;
-}
-
-.rightHeadingSmall {
-	width: 100px;
-	height: 100%;
-	background-color: transparent;
-	font-family: 'Jockey One', sans-serif;
-	color: white;
-	font-size: 60px;
-	text-align: center;
-	line-height: 160px;
-	display: flex;
-}
-
-.rightHeadingSmall span {
-	margin-left: -10px;
-}
-
-.menuButton {
-	width: 65px;
-	height: 65px;
-	border-radius: 16px;
-	background-color: #004225;
-	filter: drop-shadow(2px 3px 3px #FFB000);
-	position: fixed;
-	left: 20px;
-	top: 20px;
-	color: white;
-	font-size: 80px;
-	font-family: 'Jockey One', sans-serif;
-	text-align: center;
-	line-height: 65px;
-	cursor: pointer;
-    z-index: 1021030;
-}
-
-.menuBar {
-	width: 400px;
-	height: 100%;
-	background-color: #004225;
-	position: fixed;
-	border-right: #FFB000 10px solid;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
-	display: none;
-}
-
-.midLine {
+.midLineMAIN {
 	width: 400px;
 	height: 0px;
 	border: 3px solid #FFB000;
 	margin: 0 auto;
 }
 
-.midLine2 {
+.midLine2MAIN {
 	width: 100%;
 	height: 0px;
 	border: 3px solid #F5F5DC;
 	margin: 5px auto;
 }
 
-.underMid {
+.underMidMAIN {
 	width: 400px;
 	height: 90px;
 	margin: 10px auto;
@@ -180,13 +67,13 @@
 	align-items: center;
 }
 
-.smallBox {
+.smallBoxMAIN {
 	width: 400px;
 	height: 100%;
 	margin: auto;
 }
 
-.sortButton{
+.sortButtonMAIN{
     width: 230px;
     height: 50px;
     margin: 10px auto;
@@ -201,7 +88,7 @@
 	line-height: 50px;
 	cursor: pointer;
 }
-.listBox{
+.listBoxMAIN{
     width: 100%;
     background-color: transparent;
     display: flex;
@@ -210,7 +97,7 @@
 
     
 }
-.listBigBox{
+.listBigBoxMAIN{
     width: 430px;
     height: 300px;
     margin: 30px 30px;
@@ -218,7 +105,7 @@
     flex-wrap: wrap;
 }
 
-.listBoxTop{
+.listBoxTopMAIN{
     width: 100%;
     height: 80%;
     background-color: black;
@@ -230,7 +117,7 @@
     background-image: url(https://images.mansionglobal.com//im-725036);
     background-size: cover;
 }
-.listBoxBot{
+.listBoxBotMAIN{
     width: 100%;
     height: 20%;
     background-color: wheat;

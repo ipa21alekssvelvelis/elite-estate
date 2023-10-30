@@ -1,355 +1,148 @@
-
-.container {
-	width: 100vw;
-	background-image: url(../assets/jaunakais.jpg);
-	background-size: contain;
-	display: flex;
-	flex-direction: column;
-    overflow-x: hidden;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
-	
+*{
+    margin: 0;
+    padding: 0;
 }
 
-
-
-.topHeading {
-	width: 100%;
-	height: 115px;
-	background-color: transparent;
-	display: flex;
-	flex-wrap: wrap;
-    overflow-x: hidden;
+.container{
+    width: 100vw;
+    height: 100vh;
+   background-image: url(../assets/jaunakais.jpg);
+   background-size: cover;
+   display: flex;
+   flex-wrap: wrap;
 }
-.img1{
+
+.topHeadingMAIN2{
+    width: 100%;
+    height: 15%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.mainHeadingTextBoxMAIN2{
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+img{
 
     height: 120px;
 }
 
-.mainHeadingTextBox {
-	height: 150px;
-	margin: auto;
-	display: flex;
-	flex-wrap: wrap;
-    
-}
 
-.mainHeadingTextBox2 {
-	height: 100%;
-	margin: auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-    
-}
-
-.leftHeading {
-	width: 270px;
-	height: 100%;
-	background-color: transparent;
-	font-family: 'Jockey One', sans-serif;
-	color: white;
-	font-size: 80px;
-	text-align: center;
-	line-height: 120px;
-}
-
-.leftHeading span {
-	margin-left: 171px;
-}
-
-.leftHeadingSmall {
-	width: 46px;
-	height: 100%;
-	background-color: transparent;
-	font-family: 'Jockey One', sans-serif;
-	color: white;
-	font-size: 60px;
-	text-align: center;
-	line-height: 90px;
-}
-
-.leftHeadingSmall span {
-	margin-left: -4px;
-}
-
-.midHeading {
-	width: 110px;
-	height: 100%;
-	background-color: transparent;
-	font-family: 'Marck Script', cursive;
-	color: #FFB000;
-	font-size: 110px;
-	text-align: center;
-	line-height: 170px;
-}
-
-.midHeadingSmall {
-	width: 70PX;
-	height: 100%;
-	background-color: transparent;
-	font-family: 'Marck Script', cursive;
-	color: #FFB000;
-	font-size: 90px;
-	text-align: center;
-	line-height: 140px;
-}
-
-.rightHeading {
-	width: 270px;
-	height: 100%;
-	background-color: transparent;
-	font-family: 'Jockey One', sans-serif;
-	color: white;
-	font-size: 80px;
-	text-align: center;
-	line-height: 170px;
-}
-
-.rightHeading span {
-	margin-left: -143px;
-}
-
-.rightHeadingSmall {
-	width: 100px;
-	height: 100%;
-	background-color: transparent;
-	font-family: 'Jockey One', sans-serif;
-	color: white;
-	font-size: 60px;
-	text-align: center;
-	line-height: 160px;
-	display: flex;
-}
-
-.rightHeadingSmall span {
-	margin-left: -10px;
-}
-
-.menuButton {
-	width: 65px;
-	height: 65px;
-	border-radius: 16px;
-	background-color: #004225;
-	filter: drop-shadow(2px 3px 3px #FFB000);
-	position: fixed;
-	left: 20px;
-	top: 20px;
-	color: white;
-	font-size: 80px;
-	font-family: 'Jockey One', sans-serif;
-	text-align: center;
-	line-height: 65px;
-	cursor: pointer;
-    z-index: 1021030;
-}
-
-.menuBar {
-	width: 400px;
-	height: 100%;
-	background-color: #004225;
-	position: fixed;
-	border-right: #FFB000 10px solid;
-	border-top-right-radius: 15px;
-	border-bottom-right-radius: 15px;
-	display: none;
-}
-
-.midLine {
-	width: 400px;
-	height: 0px;
-	border: 3px solid #FFB000;
-	margin: 0 auto;
-}
-
-.midLine2 {
-	width: 100%;
-	height: 0px;
-	border: 3px solid #F5F5DC;
-	margin: -11px auto;
-}
-
-.underMid {
-	width: 400px;
-	height: 90px;
-	margin: 10px auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-}
-
-.smallBox {
-	width: 400px;
-	height: 100%;
-	margin: auto;
-}
-
-.sortButton{
-    width: 230px;
-    height: 50px;
-    margin: 10px auto;
+.menuButtonMAIN2{
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
     background-color: #004225;
-    border: none;
-    border-bottom: 4px solid #FFB000;
-    border-radius: 6px;
+    filter: drop-shadow(2px 3px 3px #FFB000);
+    position: fixed;
+    left: 20px;
+    top: 20px;
     color: white;
-	font-size: 30px;
-	font-family: 'Jockey One', sans-serif;
-	text-align: center;
-	line-height: 50px;
-	cursor: pointer;
-}
-.listBox{
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-    
-}
-.listBigBox{
-    width: 430px;
-    height: 300px;
-    margin: 30px 30px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.listBoxTop{
-    width: 100%;
-    height: 80%;
-    background-color: black;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border: #004225 solid 5px;
-    filter: drop-shadow(6px 9px 10px #004225);
+    font-size: 80px;
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    line-height: 65px;
     cursor: pointer;
-    background-image: url(https://images.mansionglobal.com//im-725036);
-    background-size: cover;
+
 }
-.listBoxBot{
-    width: 100%;
-    height: 20%;
-    background-color: wheat;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+.menuBarMAIN2{
+    width: 400px;
+    height: 100%;
     background-color: #004225;
-    color: white;
-	font-size: 37px;
-	font-family: 'Jockey One', sans-serif;
-	text-align: center;
-	line-height: 50px;
-	cursor: pointer;
+    position: fixed;
+    border-right: #FFB000 10px solid;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: none;
 }
 
+.midContainerMAIN2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.leftContainerMAIN2{
+    width: 60%;
+    height: 100%;
 
-
-.editContainer{
-    width: 1000px;
-    height: 550px;
-    border: 3px solid white;
-    margin: 50px auto;
-    background-image: url(../assets/jaunakais.jpg);
-	background-size: contain;
-	display: flex;
-    background-size: cover;
+    display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
+.rightContainerMAIN2{
+    width: 40%;
+    height: 100%;
 
-.topHeading2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.imageBoxMAIN2{
+    width: 80%;
+    height: 70%;
+    background-color: black;
+    margin: 20px auto;
+    border: 3px solid #FFB000;
+    display: flex;
+}
+
+.wrapperMAIN2 , .slideMAIN2{
     width: 100%;
-    height: 35px;
-    color: #FFF;
-    text-align: center;
-    font-family: Jockey One;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
+    height: 100%;
 }
-.midContainer{
-	width: 100%;
-	height: 92%;
-	margin: auto;
-	
-	display: flex;
+/* .slide::before{
+    content: "";
+
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 10;
+} */
+
+.imageMAIN2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.left{
-	width: 63%;
-	height: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
+.underImgMAIN2{
+    width: 70%;
+    height:80px;
+    background-color: #000000b4;
+    margin: 5px auto;
+    border: 2px #FFB000 solid;
+    display: flex;
+    flex-direction: row;
 }
-.right{
-	width: 37%;
-	height: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-}
-.mainImageContainer{
-	width: 90%;
-	height: 310px;
-	border: 3px solid #FFB000;
-	margin: auto;
-	margin-top: 60px;
-	display: flex;
-	flex-wrap: wrap;
-	background-color: #004225;
-}
-.underImageContainer{
-	width: 80%;
-	margin: 20px auto;
-	height: 80px;
-	border: 2px solid #FFB000;
-	display: flex;
-	flex-direction: row;
-	background-color: #00422592;
-}
-.addImage{
-	width: 60px;
-	height: 60px;
-	border-radius: 50%;
-	background-color: #FFB000;
-	border: 2px solid #004225;
-	color: white;
-	text-align: center;
-    font-family: Jockey One;
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 58px;
-	text-decoration: none;
-	margin: auto;
-}
-.smallImageBox{
-    width: 60px;
-    height: 60px;
+.smallImageBoxMAIN2{
+    width: 65px;
+    height: 65px;
     border: white 2px solid;
     margin: auto;
     cursor: pointer;
 }
 
-.box{
-	width: 95%;
-	height: 96%;
-	margin: auto;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	border: 3px solid #FFB000;
-	background-color: #004225;
+.boxMAIN2{
+    width: 76%;
+    height: 90%;
+    background-color: #004225;
+    border: 3px solid #FFB000;
+    margin: 19px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
-.boxHeading{
+.boxHeadingMAIN2{
     width: 100%;
     height: 60px;
+
     color: white;
     font-size: 30px;
     font-family: 'Jockey One', sans-serif;
@@ -358,10 +151,10 @@
     cursor: pointer;
 }
 
-.descriptionBox{
+.descriptionBoxMAIN2{
     width: 90%;
-    height: 188px;
-    margin: 15px auto;
+    height: 200px;
+    margin: 20px auto;
     border-top: 4.6px solid #FFB000 ;
     border-bottom: 4.6px solid #FFB000 ;
     color: white;
@@ -372,122 +165,202 @@
     flex-wrap: wrap;
 
 }
-.inputField{
-    width: 80%;
-    height: 40px;
-    margin: 0px auto;
-    background-color: #004225;
-    border: none;
-    border-top: #FFB000 4px solid;
-    border-radius: 3px;
-    filter: drop-shadow(2px 5px 6px #000000);
-    color: white;
+
+.descTextBoxMAIN2{
+width: 90%;
+height: 60%;
+margin: auto;
 
 }
-.inputFieldUnder{
-    width: 80%;
-    height: 25px;
-    margin: auto 0;
-    background-color: #004225;
-    border: none;
-    border-top: #FFB000 4px solid;
-    border-radius: 3px;
-    filter: drop-shadow(2px 5px 6px #000000);
-    color: white;
-
+.aboutBoxMAIN2{
+    width: 90%;
+    height: 150px;
+    margin: 5px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
-.descTextBox{
-	width: 90%;
-	height: 60%;
-	margin: auto;
-	
-	}
-	.aboutBox{
-		width: 100%;
-		height: 140px;
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: column;
-	
-	}
-.inputFieldDesc{
-    width: 100%;
-    height: 136px;
-    margin: -16px auto;
-    background-color: #004225;
-    border: none;
-    border-top: #FFB000 4px solid;
-    border-radius: 3px;
-    filter: drop-shadow(2px 5px 6px #000000);
-    color: white;
-
+.singleBoxMAIN2{
+    width: 90%;
+    height: 30px;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: row;
 }
-.inputFieldAvailable{
-	width: 12%;
-    height: 24px;
-    margin: auto ;
-    background-color: #004225;
-    border: none;
-    border-top: #FFB000 4px solid;
-    border-radius: 3px;
-    filter: drop-shadow(2px 5px 6px #000000);
+.aboutNameHeadMAIN2{
+    width: 35%;
+    height: 100%;
     color: white;
-}
-.inputField::placeholder, .inputFieldDesc::placeholder, .inputFieldUnder::placeholder{
-	text-align: center;
-	color: rgba(255, 255, 255, 0.799);
-    font-size: 18px;
+    font-size:18px;
     font-family: 'Jockey One', sans-serif;
+    line-height: 30px;
 }
-
-
-
-.aboutFullCont{
-	width: 95%;
-	height: 40px;
-	margin: auto;
-	display: flex;
-}
-
-.label{
-	width: 30%;
-	height: 100%;
-	line-height: 40px;
-	color: white;
-    font-size: 18px;
+.aboutNameMAIN2{
+    width: 65%;
+    height: 100%;
+    color: white;
+    font-size:18px;
     font-family: 'Jockey One', sans-serif;
-
+    line-height: 30px;
+    letter-spacing: 1px;
 }
-.info{
-	width: 70%;
-	height: 100%;
-	line-height: 40px;
-	color: white;
+.buttonBoxMAIN2{
+    width: 95%;
+    height: 65px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonMAIN2{
+    width: 180px;
+    height: 45px;
+    background-color: #004225;
+    border: none;
+    border-bottom: 4px solid #FFB000;
+    border-radius: 5px;
+    box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.70);
+    cursor: pointer;
+    margin: auto;
+    color: WHITE;
+    text-align: center;
+    font-family: Jockey One;
     font-size: 20px;
-    font-family: 'Jockey One', sans-serif;
-	display: flex;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-.buttonBox{
-	width: 100%;
-	height: 58px;
-	display: flex;
-}
-.saveButton{
+.hiddenAdditionalMAIN2{
+    width: 800px;
+    height: 65%;
+    background-color: #004225;
+    border: #FFB000 4px solid;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+   
 
-		width: 180px;
-		height: 35px;
-		background-color: #004225;
-		border: none;
-		border-bottom: 4px solid #FFB000;
-		border-radius: 5px;
-		box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.70);
-		cursor: pointer;
-		margin: auto;
-		color: WHITE;
-		text-align: center;
-		font-family: Jockey One;
-		font-size: 20px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: normal;
+}
+.hiddenContactMAIN2{
+    width: 500px;
+    height: 90%;
+    background-color: #004225;
+    border: #FFB000 4px solid;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.additionalHeadingMAIN2{
+    width: 100%;
+    height: 40px;
+    color: #FFF;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.infoBoxMAIN2{
+    width: 90%;
+    height: 80%;
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.infoBox2MAIN2{
+    width: 90%;
+    height: 88%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+.takHzMAIN2{
+    width: 90%;
+    height: 110px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hzHeadingMAIN2{
+    width: 100%;
+    height: 40px;
+    color: #FFF;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.hzTextMAIN2{
+width: 90%;
+height: 45px;
+margin: 0 auto;
+border-radius: 3px;
+background: #004225;
+box-shadow: 2px 5px 6px 4px rgba(0, 0, 0, 0.50);
+border-top: 3.5px solid #FFB000;
+}
+.mainInfoBoxMAIN2{
+    width: 340px;
+    height: 50px;
+    display: flex;
+    margin: auto;
+}
+.labelMAIN2{
+    width: 170px;
+    height: 100%;
+    color: #FFF;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+}
+.informationMAIN2{
+    width: 195px;
+    height: 35px;
+    border-radius: 3px;
+    border-top: 3.5px solid #FFB000;
+    background: #004225;
+    box-shadow: 2px 5px 6px 4px rgba(0, 0, 0, 0.50);
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+}
+.closeButtonMAIN2{
+    width: 15px;
+    height: 15px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+
+    font-family: Jockey One;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.hzTextMAIN2{
+    color: white;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 25px;
+    line-height: 50px;
 }

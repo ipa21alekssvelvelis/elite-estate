@@ -9,33 +9,33 @@ function IndexList() {
         <>
             <Menu />
             <div className="container">
-                <div className="topHeading">
-                    <div className="mainHeadingTextBox">
+                <div className="topHeadingMAIN">
+                    <div className="mainHeadingTextBoxMAIN">
                         <img src={image} alt="ddd" />
                     </div>
                 </div>
-                <div className="midLine"></div>
-                <div className="underMid">
-                    <div className="smallBox">
-                        <div className="mainHeadingTextBox2">
+                <div className="midLineMAIN"></div>
+                <div className="underMidMAIN">
+                    <div className="smallBoxMAIN">
+                        <div className="mainHeadingTextBox2MAIN">
                             <img src={image2} alt="Buy a House" />
                         </div>
                     </div>
                 </div>
-                <div className="midLine2"></div>
-                <button className="sortButton">SORT</button>
-                <div className="listBox">
-                    <div className="listBigBox">
-                        <a href="/html_files/houseView.html" className="listBoxTop"></a>
-                        <a className="listBoxBot">30 000 000 $</a>
+                <div className="midLine2MAIN"></div>
+                <button className="sortButtonMAIN">SORT</button>
+                <div className="listBoxMAIN">
+                    <div className="listBigBoxMAIN">
+                        <a href="/html_files/houseView.html" className="listBoxTopMAIN"></a>
+                        <a className="listBoxBotMAIN">30 000 000 $</a>
                     </div>
-                    <div className="listBigBox">
-                        <a href="/html_files/houseView.html" className="listBoxTop"></a>
-                        <a className="listBoxBot">30 000 000 $</a>
+                    <div className="listBigBoxMAIN">
+                        <a href="/html_files/houseView.html" className="listBoxTopMAIN"></a>
+                        <a className="listBoxBotMAIN">30 000 000 $</a>
                     </div>
-                    <div className="listBigBox">
-                        <a href="/html_files/houseView.html" className="listBoxTop"></a>
-                        <a className="listBoxBot">30 000 000 $</a>
+                    <div className="listBigBoxMAIN">
+                        <a href="/html_files/houseView.html" className="listBoxTopMAIN"></a>
+                        <a className="listBoxBotMAIN">30 000 000 $</a>
                     </div>
                 </div>
             </div>
