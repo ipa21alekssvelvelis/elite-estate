@@ -43,6 +43,14 @@
 	align-items: center;
     
 }
+
+.image1{
+	height: 150px;
+}
+
+.image2{
+	height: 70px;
+}
 .midLineMAIN {
 	width: 400px;
 	height: 0px;
@@ -89,6 +97,7 @@
 	cursor: pointer;
 }
 .listBoxMAIN{
+	height: 100px;
     width: 100%;
     background-color: transparent;
     display: flex;

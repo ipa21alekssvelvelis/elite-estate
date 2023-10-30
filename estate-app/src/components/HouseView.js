@@ -21,8 +21,8 @@ function HouseView() {
     <>
       <Menu />
       <OpenDivs openDiv={openDiv} openDiv2={openDiv2} />
-      <div class="topHeading">
-        <div class="mainHeadingTextBox">
+      <div class="topHeadingMAIN2">
+        <div class="mainHeadingTextBoxMAIN2">
           <a href="index.html">
             <img src={image} alt="" />
           </a>

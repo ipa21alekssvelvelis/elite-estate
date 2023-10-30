@@ -11,14 +11,14 @@ function IndexList() {
             <div className="container">
                 <div className="topHeadingMAIN">
                     <div className="mainHeadingTextBoxMAIN">
-                        <img src={image} alt="ddd" />
+                        <img className="image1" src={image} alt="ddd" />
                     </div>
                 </div>
                 <div className="midLineMAIN"></div>
                 <div className="underMidMAIN">
                     <div className="smallBoxMAIN">
                         <div className="mainHeadingTextBox2MAIN">
-                            <img src={image2} alt="Buy a House" />
+                            <img className="image2" src={image2} alt="Buy a House" />
                         </div>
                     </div>
                 </div>

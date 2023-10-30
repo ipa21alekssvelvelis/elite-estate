@@ -116,7 +116,7 @@ function CreateProfile() {
             <div className="underMidCR">
                 <div className="smallBoxCR">
                     <div className="mainHeadingTextBox2CR">
-                        <img src={image2} alt="" />
+                        <img className="img2CR" src={image2} alt="" />
                     </div>
                 </div>
             </div>

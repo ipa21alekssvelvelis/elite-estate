@@ -36,6 +36,11 @@
 	overflow: hidden;
     height: 120px;
 }
+.img2CR{
+
+	overflow: hidden;
+    height: 60px;
+}
 
 .mainHeadingTextBoxCR {
 	height: 150px;
@@ -213,7 +218,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	background-color: #004235;
+	background-color: #004225;
 }
 
 form{
