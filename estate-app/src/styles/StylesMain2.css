@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+   background-image: url(../assets/jaunakais.jpg);
+   background-size: cover;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.topHeadingMAIN2{
+    width: 100%;
+    height: 15%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.mainHeadingTextBoxMAIN2{
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+img{
+
+    height: 120px;
+}
+
+
+.menuButtonMAIN2{
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+    background-color: #004225;
+    filter: drop-shadow(2px 3px 3px #FFB000);
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    color: white;
+    font-size: 80px;
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    line-height: 65px;
+    cursor: pointer;
+
+}
+.menuBarMAIN2{
+    width: 400px;
+    height: 100%;
+    background-color: #004225;
+    position: fixed;
+    border-right: #FFB000 10px solid;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: none;
+}
+
+.midContainerMAIN2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.leftContainerMAIN2{
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.rightContainerMAIN2{
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.imageBoxMAIN2{
+    width: 80%;
+    height: 70%;
+    background-color: black;
+    margin: 20px auto;
+    border: 3px solid #FFB000;
+    display: flex;
+}
+
+.wrapperMAIN2 , .slideMAIN2{
+    width: 100%;
+    height: 100%;
+}
+/* .slide::before{
+    content: "";
+
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    z-index: 10;
+} */
+
+.imageMAIN2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.underImgMAIN2{
+    width: 70%;
+    height:80px;
+    background-color: #000000b4;
+    margin: 5px auto;
+    border: 2px #FFB000 solid;
+    display: flex;
+    flex-direction: row;
+}
+.smallImageBoxMAIN2{
+    width: 65px;
+    height: 65px;
+    border: white 2px solid;
+    margin: auto;
+    cursor: pointer;
+}
+
+.boxMAIN2{
+    width: 76%;
+    height: 90%;
+    background-color: #004225;
+    border: 3px solid #FFB000;
+    margin: 19px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.boxHeadingMAIN2{
+    width: 100%;
+    height: 60px;
+
+    color: white;
+    font-size: 30px;
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    line-height: 65px;
+    cursor: pointer;
+}
+
+.descriptionBoxMAIN2{
+    width: 90%;
+    height: 200px;
+    margin: 20px auto;
+    border-top: 4.6px solid #FFB000 ;
+    border-bottom: 4.6px solid #FFB000 ;
+    color: white;
+    font-size: 20px;
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.descTextBoxMAIN2{
+width: 90%;
+height: 60%;
+margin: auto;
+
+}
+.aboutBoxMAIN2{
+    width: 90%;
+    height: 150px;
+    margin: 5px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.singleBoxMAIN2{
+    width: 90%;
+    height: 30px;
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: row;
+}
+.aboutNameHeadMAIN2{
+    width: 35%;
+    height: 100%;
+    color: white;
+    font-size:18px;
+    font-family: 'Jockey One', sans-serif;
+    line-height: 30px;
+}
+.aboutNameMAIN2{
+    width: 65%;
+    height: 100%;
+    color: white;
+    font-size:18px;
+    font-family: 'Jockey One', sans-serif;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.buttonBoxMAIN2{
+    width: 95%;
+    height: 65px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonMAIN2{
+    width: 180px;
+    height: 45px;
+    background-color: #004225;
+    border: none;
+    border-bottom: 4px solid #FFB000;
+    border-radius: 5px;
+    box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.70);
+    cursor: pointer;
+    margin: auto;
+    color: WHITE;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.hiddenAdditionalMAIN2{
+    width: 800px;
+    height: 65%;
+    background-color: #004225;
+    border: #FFB000 4px solid;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+   
+
+}
+.hiddenContactMAIN2{
+    width: 500px;
+    height: 90%;
+    background-color: #004225;
+    border: #FFB000 4px solid;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.additionalHeadingMAIN2{
+    width: 100%;
+    height: 40px;
+    color: #FFF;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.infoBoxMAIN2{
+    width: 90%;
+    height: 80%;
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.infoBox2MAIN2{
+    width: 90%;
+    height: 88%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+.takHzMAIN2{
+    width: 90%;
+    height: 110px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hzHeadingMAIN2{
+    width: 100%;
+    height: 40px;
+    color: #FFF;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.hzTextMAIN2{
+width: 90%;
+height: 45px;
+margin: 0 auto;
+border-radius: 3px;
+background: #004225;
+box-shadow: 2px 5px 6px 4px rgba(0, 0, 0, 0.50);
+border-top: 3.5px solid #FFB000;
+}
+.mainInfoBoxMAIN2{
+    width: 340px;
+    height: 50px;
+    display: flex;
+    margin: auto;
+}
+.labelMAIN2{
+    width: 170px;
+    height: 100%;
+    color: #FFF;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+}
+.informationMAIN2{
+    width: 195px;
+    height: 35px;
+    border-radius: 3px;
+    border-top: 3.5px solid #FFB000;
+    background: #004225;
+    box-shadow: 2px 5px 6px 4px rgba(0, 0, 0, 0.50);
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+}
+.closeButtonMAIN2{
+    width: 15px;
+    height: 15px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+
+    font-family: Jockey One;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.hzTextMAIN2{
+    color: white;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 25px;
+    line-height: 50px;
+}

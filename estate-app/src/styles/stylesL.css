@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+   background-image: url(../assets/jaunakais.jpg);
+   background-size: cover;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.topHeadingLOG{
+    width: 100%;
+    height: 170px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainHeadingTextBoxLOG{
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+.loginBoxLOG{
+    width: 370px;
+    height: 480px;
+    margin: 20px auto;
+    background-color: #004225;
+    border-radius: 11px;
+    border: #FFB000 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+}
+
+.loginHeadingLOG{
+    width: 100%;
+    height: 60px;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+}
+
+.loginMidBoxLOG{
+    width: 320px;
+    height: 230px;
+    border-bottom: #FFB000 3.6px solid;
+    margin: auto;
+    border-radius: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.inputGroupLoginLOG{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.inputHeadingLOG{
+    width: 100%;
+    height: 40px;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 20px;
+}
+.inputFieldLOG{
+    width: 80%;
+    height: 28px;
+    margin: 0px auto;
+    background-color: #004225;
+    border: none;
+    border-top: #FFB000 4px solid;
+    border-radius: 3px;
+    filter: drop-shadow(2px 5px 6px #000000);
+    color: white;
+
+}
+.loginButtonBoxLOG{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.submitButtonLOG{
+    width: 200px;
+    height: 42px;
+    background-color: #004225;
+    border: none;
+    border-bottom: #FFB000 4px solid;
+    border-radius: 5px;
+    filter: drop-shadow(2px 5px 6px #000000);
+    margin: 10px auto;
+    color: white;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+.registerCallLOG{
+    width: 100%;
+    height: 20px;
+display: flex;
+flex-wrap: wrap;
+}
+a{
+    color: white;
+    font-size: 10px;
+    font-family: 'Jockey One', sans-serif;
+margin: 0 auto;
+
+}
+
+.menuButtonLOG{
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+    background-color: #004225;
+    filter: drop-shadow(2px 3px 3px #FFB000);
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    color: white;
+    font-size: 80px;
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    line-height: 65px;
+    cursor: pointer;
+
+}
+.menuBarLOG{
+    width: 400px;
+    height: 100%;
+    background-color: #004225;
+    position: fixed;
+    border-right: #FFB000 10px solid;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    img{
+        width: 80%;
+        margin: auto;
+    }
+    .mainHeadingTextBoxLOG{
+        height: 5%;
+    }
+    .loginBoxLOG{
+        width: 80%;
+    }
+    .inputFieldLOG{
+        width: 80%;
+    }
+    .loginMidBoxLOG{
+        width: 85%;
+    }
+    .menuButtonLOG{
+        width: 40px;
+        height: 40px;
+        font-size: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+      }

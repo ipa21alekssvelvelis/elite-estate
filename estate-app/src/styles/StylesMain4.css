@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.containerMAIN4 {
+    width: 100vw;
+    background-image: url(../assets/jaunakais.jpg);
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    
+}
+*::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
+.topHeadingMAIN4 {
+    width: 100%;
+    height: 115px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+.img1MAIN4{
+
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.mainHeadingTextBoxMAIN4 {
+    height: 150px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.mainHeadingTextBox2MAIN4 {
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.leftHeadingMAIN4 {
+    width: 270px;
+    height: 100%;
+    background-color: transparent;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    line-height: 120px;
+}
+
+.leftHeadingMAIN4 span {
+    margin-left: 171px;
+}
+
+.leftHeadingSmallMAIN4 {
+    width: 46px;
+    height: 100%;
+    background-color: transparent;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    line-height: 90px;
+}
+
+.leftHeadingSmallMAIN4 span {
+    margin-left: -4px;
+}
+
+.midHeadingMAIN4 {
+    width: 110px;
+    height: 100%;
+    background-color: transparent;
+    font-family: 'Marck Script', cursive;
+    color: #FFB000;
+    font-size: 110px;
+    text-align: center;
+    line-height: 170px;
+}
+
+.midHeadingSmallMAIN4 {
+    width: 70PX;
+    height: 100%;
+    background-color: transparent;
+    font-family: 'Marck Script', cursive;
+    color: #FFB000;
+    font-size: 90px;
+    text-align: center;
+    line-height: 140px;
+}
+
+.rightHeadingMAIN4 {
+    width: 270px;
+    height: 100%;
+    background-color: transparent;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    line-height: 170px;
+}
+
+.rightHeadingMAIN4 span {
+    margin-left: -143px;
+}
+
+.rightHeadingSmallMAIN4 {
+    width: 100px;
+    height: 100%;
+    background-color: transparent;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    line-height: 160px;
+    display: flex;
+}
+
+.rightHeadingSmallMAIN4 span {
+    margin-left: -10px;
+}
+
+.menuButtonMAIN4 {
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+    background-color: #004225;
+    filter: drop-shadow(2px 3px 3px #FFB000);
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    color: white;
+    font-size: 80px;
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    line-height: 65px;
+    cursor: pointer;
+    z-index: 1021030;
+}
+
+.menuBarMAIN4 {
+    width: 400px;
+    height: 100%;
+    background-color: #004225;
+    position: fixed;
+    border-right: #FFB000 10px solid;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: none;
+}
+
+.midLineMAIN4 {
+    width: 400px;
+    height: 0px;
+    border: 3px solid #FFB000;
+    margin: 0 auto;
+}
+
+.midLine2MAIN4 {
+    width: 100%;
+    height: 0px;
+    border: 3px solid #F5F5DC;
+    margin: -11px auto;
+}
+
+.underMidMAIN4 {
+    width: 400px;
+    height: 90px;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallBoxMAIN4 {
+    width: 400px;
+    height: 100%;
+    margin: auto;
+}
+
+.sortButtonMAIN4 {
+    width: 230px;
+    height: 50px;
+    margin: 10px auto;
+    background-color: #004225;
+    border: none;
+    border-bottom: 4px solid #FFB000;
+    border-radius: 6px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.listBoxMAIN4 {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    
+}
+.listBigBoxMAIN4 {
+    width: 430px;
+    height: 300px;
+    margin: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listBoxTopMAIN4 {
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: #004225 solid 5px;
+    filter: drop-shadow(6px 9px 10px #004225);
+    cursor: pointer;
+    background-image: url(https://images.mansionglobal.com//im-725036);
+    background-size: cover;
+}
+.listBoxBotMAIN4 {
+    width: 100%;
+    height: 20%;
+    background-color: wheat;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #004225;
+    color: white;
+    font-size: 37px;
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+
+
+.editContainerMAIN4 {
+    width: 1000px;
+    height: 550px;
+    border: 3px solid #FFB000;
+    margin: 50px auto;
+    background-image: url(../assets/jaunakais.jpg);
+    background-size: contain;
+    display: flex;
+    background-size: cover;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.topHeading2MAIN4 {
+    width: 100%;
+    height: 35px;
+    color: #FFF;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+.midContainerMAIN4 {
+    width: 100%;
+    height: 92%;
+    margin: auto;
+    
+    display: flex;
+}
+.leftMAIN4 {
+    width: 63%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.rightMAIN4 {
+    width: 37%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.mainImageContainerMAIN4 {
+    width: 90%;
+    height: 310px;
+    border: 3px solid #FFB000;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #004225;
+}
+.underImageContainerMAIN4 {
+    width: 80%;
+    margin: 20px auto;
+    height: 80px;
+    border: 2px solid #FFB000;
+    display: flex;
+    flex-direction: row;
+    background-color: #00422592;
+}
+.addImageMAIN4 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FFB000;
+    border: 2px solid #004225;
+    color: white;
+    text-align: center;
+    font-family: Jockey One;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 58px;
+    text-decoration: none;
+    margin: auto;
+}
+.smallImageBoxMAIN4 {
+    width: 60px;
+    height: 60px;
+    border: white 2px solid;
+    margin: auto;
+    cursor: pointer;
+}
+
+.boxMAIN4 {
+    width: 95%;
+    height: 96%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 3px solid #FFB000;
+    background-color: #004225;
+}
+.boxHeadingMAIN4 {
+    width: 100%;
+    height: 60px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    line-height: 65px;
+    cursor: pointer;
+}
+
+.descriptionBoxMAIN4 {
+    width: 90%;
+    height: 188px;
+    margin: 15px auto;
+    border-top: 4.6px solid #FFB000 ;
+    border-bottom: 4.6px solid #FFB000 ;
+    color: white;
+    font-size: 20px;
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.inputFieldMAIN4 {
+    width: 80%;
+    height: 40px;
+    margin: 0px auto;
+    background-color: #004225;
+    border: none;
+    border-top: #FFB000 4px solid;
+    border-radius: 3px;
+    filter: drop-shadow(2px 5px 6px #000000);
+    color: white;
+
+}
+.inputFieldUnderMAIN4 {
+    width: 80%;
+    height: 25px;
+    margin: auto 0;
+    background-color: #004225;
+    border: none;
+    border-top: #FFB000 4px solid;
+    border-radius: 3px;
+    filter: drop-shadow(2px 5px 6px #000000);
+    color: white;
+
+}
+.descTextBoxMAIN4 {
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    
+    }
+    .aboutBoxMAIN4 {
+        width: 100%;
+        height: 140px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    
+    }
+.inputFieldDescMAIN4 {
+    width: 100%;
+    height: 136px;
+    margin: -16px auto;
+    background-color: #004225;
+    border: none;
+    border-top: #FFB000 4px solid;
+    border-radius: 3px;
+    filter: drop-shadow(2px 5px 6px #000000);
+    color: white;
+
+}
+.inputFieldAvailableMAIN4 {
+    width: 12%;
+    height: 24px;
+    margin: auto ;
+    background-color: #004225;
+    border: none;
+    border-top: #FFB000 4px solid;
+    border-radius: 3px;
+    filter: drop-shadow(2px 5px 6px #000000);
+    color: white;
+}
+.inputField::placeholder, .inputFieldDesc::placeholder, .inputFieldUnder::placeholder{
+    text-align: center;
+    color: rgba(255, 255, 255, 0.799);
+    font-size: 18px;
+    font-family: 'Jockey One', sans-serif;
+}
+
+
+
+.aboutFullContMAIN4 {
+    width: 95%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+}
+
+.labelMAIN4 {
+    width: 30%;
+    height: 100%;
+    line-height: 40px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Jockey One', sans-serif;
+
+}
+.infoMAIN4 {
+    width: 70%;
+    height: 100%;
+    line-height: 40px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Jockey One', sans-serif;
+    display: flex;
+}
+.buttonBoxMAIN4 {
+    width: 100%;
+    height: 58px;
+    display: flex;
+}
+.saveButtonMAIN4 {
+
+        width: 180px;
+        height: 35px;
+        background-color: #004225;
+        border: none;
+        border-bottom: 4px solid #FFB000;
+        border-radius: 5px;
+        box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.70);
+        cursor: pointer;
+        margin: auto;
+        color: WHITE;
+        text-align: center;
+        font-family: Jockey One;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}

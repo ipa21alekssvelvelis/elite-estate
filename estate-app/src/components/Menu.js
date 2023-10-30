@@ -1,38 +1,42 @@
-import React from 'react';
-import '../styles/App.css';
-import Logout from './Logout.js';
-import Cookies from 'js-cookie';
+import React, { useState } from 'react';
+import Logout from '../components/Logout.js';
+import '../styles/StylesMenu.css';
 
 function Menu() {
-  const isAuthenticated = Cookies.get('roleID');
-  const currentPath = window.location.pathname;
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  function openMenu() {
+    setMenuOpen(!isMenuOpen);
+    const overlay = document.getElementById('overlay');
+    const menuBar = document.getElementById('menuBar');
+
+    if (isMenuOpen) {
+      menuBar.style.display = 'none';
+      overlay.classList.remove('visible');
+    } else {
+      menuBar.style.display = 'flex';
+      overlay.classList.add('visible');
+    }
+  }
 
   return (
-    <div className='header'>
-      <Logout />
-      {isAuthenticated && (
-        <>
-          {currentPath === '/' && (
-            <>
-              <a href={`/create`}>Create</a>
-              <a href={`/find`}>Find</a>
-            </>
-          )}
-          {currentPath === '/find' && (
-            <>
-              <a href={`/create`}>Create</a>
-              <a href={`/`}>List</a>
-            </>
-          )}
-          {currentPath === '/create' && (
-            <>
-              <a href={`/find`}>Find</a>
-              <a href={`/`}>List</a>
-            </>
-          )}
-        </>
-      )}
-    </div>
+    <>
+      <button onClick={openMenu} id='menuButton' className="menuButton">
+        {isMenuOpen ? '-' : '+'}
+      </button>
+      <div id='menuBar' className="menuBar">
+        <div className='containerMenu'>
+          <button onClick={openMenu} id='menuButton' className="menuButton">
+            {isMenuOpen ? '-' : '+'}
+          </button>
+          <a className='routerButtons' href={`/IndexList`}>HOUSES</a>
+          <a className='routerButtons'>SELL A HOUSE</a>
+          <a className='routerButtons'>PROFILE</a>
+          <Logout/>
+        </div>
+      </div>
+      <div id="overlay" className={`overlay ${isMenuOpen ? 'visible' : ''}`}></div>
+    </>
   );
 }
 
