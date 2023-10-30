@@ -30,7 +30,7 @@ function HouseEdit(){
           </div>
         </div>
       </div>
-      <div class="midLine2"></div>
+      <div class="midLine2MAIN4"></div>
 
 
 
