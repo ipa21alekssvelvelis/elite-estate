@@ -85,7 +85,7 @@ function Register(){
 {/* <Menu/> */}
 
 <div class="topHeadingREG">
-        <div class="mainHeadingTextBox">
+        <div class="mainHeadingTextBoxREG">
           <img class="img1REG" src={image} alt=""/>
         </div>
       </div>

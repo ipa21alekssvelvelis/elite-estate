@@ -74,28 +74,7 @@ function Login() {
     return(
         <>
             {/* <Menu/> */}
-<<<<<<< HEAD
-            <div class="topHeading">
-        <div class="mainHeadingTextBox">
-          <img class="img1" src="/assets/image-removebg-preview.png" alt=""/>
-        </div>
-      </div>
-      <div class="midLine"></div>
-      <div class="underMid">
-        <div class="smallBox">
-          <div class="mainHeadingTextBox2">
-            <img src="/assets/editaprofile.png" alt=""/>
-          </div>
-        </div>
-      </div>
-      <div class="midLine2"></div>
-    <form className="loginBox" onSubmit={handleSubmit}>
-      <div className="loginHeading">LOGIN</div>
-      <div className="loginMidBox">
-        <div className="inputGroupLogin">
-          <div className="inputHeading">USERNAME</div>
-          <input className="inputField" 
-=======
+
             <div class="topHeadingLOG">
         <div class="mainHeadingTextBoxLOG">
           <a href="index.html">
@@ -109,7 +88,6 @@ function Login() {
         <div className="inputGroupLoginLOG">
           <div className="inputHeadingLOG">USERNAME</div>
           <input className="inputFieldLOG" 
->>>>>>> c43a6358cfebca7f9e88794f1e9e0577808e377c
           type="text" 
           id='username' 
           name='password'

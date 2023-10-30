@@ -16,11 +16,7 @@ function App() {
   return (
     <UserProvider>
       <div className="container">
-<<<<<<< HEAD
-        <Router>
-=======
         {/* <Router>
->>>>>>> c43a6358cfebca7f9e88794f1e9e0577808e377c
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
@@ -32,11 +28,7 @@ function App() {
                     <Route path="/houseview" element={<HouseView />} />
                     <Route path="/houseedit" element={<HouseEdit />} />
                     <Route path="/createProfile" element={<CreateProfile />} />
-<<<<<<< HEAD
                     <Route index element={<Navigate to="/offerlist" />} /> 
-=======
-                    <Route index element={<Navigate to="/offerlist" />} />
->>>>>>> c43a6358cfebca7f9e88794f1e9e0577808e377c
                   </>
                 ) : (
                   <>
@@ -44,28 +36,16 @@ function App() {
                     <Route path="/houseview" element={<HouseView />} />
                     <Route path="/houseedit" element={<HouseEdit />} />
                     <Route path="/createProfile" element={<CreateProfile />} />
-<<<<<<< HEAD
                     <Route index element={<Navigate to="/createProfile" />} /> 
-=======
-                    <Route index element={<Navigate to="/createProfile" />} />
->>>>>>> c43a6358cfebca7f9e88794f1e9e0577808e377c
                   </>
                 )}
               </>
             ) : (
-<<<<<<< HEAD
               <Route index element={<Navigate to="/login" />} /> 
             )}
           </Routes>
-        </Router>
-       
-=======
-              <Route index element={<Navigate to="/login" />} />
-            )}
-          </Routes> */}
-        {/* </Router> */}
+        </Router> */}
         <HouseEdit/>
->>>>>>> c43a6358cfebca7f9e88794f1e9e0577808e377c
       </div>
     </UserProvider>
   );
