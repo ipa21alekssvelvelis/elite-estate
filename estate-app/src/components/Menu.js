@@ -1,22 +1,38 @@
 import React from 'react';
-import '../styles/StylesMenu.css';
-
+import '../styles/App.css';
+import Logout from './Logout.js';
+import Cookies from 'js-cookie';
 
 function Menu() {
-
- 
-  function openMenu(){
-    document.getElementById('menuBar').style.display='flex';
-}
-
+  const isAuthenticated = Cookies.get('roleID');
+  const currentPath = window.location.pathname;
 
   return (
-    <>
-    <button onClick={openMenu} id='menuButton' className="menuButton">+</button>
-      <button id='menuBar' className="menuBar">
-        <div className="closeButton">x</div>
-      </button>
-    </>
+    <div className='header'>
+      <Logout />
+      {isAuthenticated && (
+        <>
+          {currentPath === '/' && (
+            <>
+              <a href={`/create`}>Create</a>
+              <a href={`/find`}>Find</a>
+            </>
+          )}
+          {currentPath === '/find' && (
+            <>
+              <a href={`/create`}>Create</a>
+              <a href={`/`}>List</a>
+            </>
+          )}
+          {currentPath === '/create' && (
+            <>
+              <a href={`/find`}>Find</a>
+              <a href={`/`}>List</a>
+            </>
+          )}
+        </>
+      )}
+    </div>
   );
 }
 
