@@ -73,6 +73,20 @@ function Login() {
     return(
         <>
             {/* <Menu/> */}
+            <div class="topHeading">
+        <div class="mainHeadingTextBox">
+          <img class="img1" src="/assets/image-removebg-preview.png" alt=""/>
+        </div>
+      </div>
+      <div class="midLine"></div>
+      <div class="underMid">
+        <div class="smallBox">
+          <div class="mainHeadingTextBox2">
+            <img src="/assets/editaprofile.png" alt=""/>
+          </div>
+        </div>
+      </div>
+      <div class="midLine2"></div>
     <form className="loginBox" onSubmit={handleSubmit}>
       <div className="loginHeading">LOGIN</div>
       <div className="loginMidBox">

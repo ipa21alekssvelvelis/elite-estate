@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'; // Updated import
 import CreateProfile from './components/CreateProfile';
 import Login from './components/Login';
 import Register from './components/Register';
@@ -12,38 +12,40 @@ import { UserProvider } from './components/UserContext';
 function App() {
   const isAuthenticated = !!Cookies.get('userID');
   const isFirstTime = !!Cookies.get('sellerID');
+
   return (
     <UserProvider>
       <div className="container">
         <Router>
-          <Switch>
-            <Route path="/login" component={Login} />
-            <Route path="/register" component={Register} />
+          <Routes>
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
             {isAuthenticated ? (
               <>
-              {isFirstTime ? (
-                <Switch>
-                  <Route path="/offerList" component={IndexList} />
-                  <Route path="/houseview" component={HouseView} />
-                  <Route path="/houseedit" component={HouseEdit} />
-                  <Route path="/createProfile" component={CreateProfile} />
-                  <Redirect from="/" to="/offerlist" />
-                </Switch>
-              ) : (
-                <Switch>
-                  <Route path="/offerList" component={IndexList} />
-                  <Route path="/houseview" component={HouseView} />
-                  <Route path="/houseedit" component={HouseEdit} />
-                  <Route path="/createProfile" component={CreateProfile} />
-                  <Redirect from="/" to="/createProfile" />
-                </Switch>
-              )}
+                {isFirstTime ? (
+                  <>
+                    <Route path="/offerList" element={<IndexList />} />
+                    <Route path="/houseview" element={<HouseView />} />
+                    <Route path="/houseedit" element={<HouseEdit />} />
+                    <Route path="/createProfile" element={<CreateProfile />} />
+                    <Route index element={<Navigate to="/offerlist" />} /> 
+                  </>
+                ) : (
+                  <>
+                    <Route path="/offerList" element={<IndexList />} />
+                    <Route path="/houseview" element={<HouseView />} />
+                    <Route path="/houseedit" element={<HouseEdit />} />
+                    <Route path="/createProfile" element={<CreateProfile />} />
+                    <Route index element={<Navigate to="/createProfile" />} /> 
+                  </>
+                )}
               </>
             ) : (
-              <Redirect from="/" to="/login" />
+              <Route index element={<Navigate to="/login" />} /> 
             )}
-          </Switch>
+          </Routes>
         </Router>
+       
       </div>
     </UserProvider>
   );

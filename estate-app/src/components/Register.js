@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/stylesReg.css';
+import image from '../assets/image-removebg-preview.png';
 
 function Register(){
     const [user, setUser] = useState('');
@@ -82,34 +83,42 @@ function Register(){
     return(
         <>
 {/* <Menu/> */}
-<form className="loginBox" onSubmit={handleSubmit}>
-      <div className="loginHeading">REGISTER</div>
-      <div className="loginMidBox">
-        <div className="inputGroup1">
-          <div className="inputHeading">USERNAME</div>
+
+<div class="topHeadingREG">
+        <div class="mainHeadingTextBox">
+          <img class="img1REG" src={image} alt=""/>
+        </div>
+      </div>
+      <div class="midLineREG"></div>
+
+<form className="loginBoxREG" onSubmit={handleSubmit}>
+      <div className="loginHeadingREG">REGISTER</div>
+      <div className="loginMidBoxREG">
+        <div className="inputGroup1REG">
+          <div className="inputHeadingREG">USERNAME</div>
           <input 
-          className="inputField" 
+          className="inputFieldREG" 
           type="text" 
           id='username' 
           name='username'
           onChange={handleUsernameChange}/>
-          {errors.user && <p className="error" id='usererror'>{errors.user}</p>}
-          {errors.taken && <p className="error" id='usererror'>{errors.taken}</p>}
+          {errors.user && <p className="errorREG" id='usererror'>{errors.user}</p>}
+          {errors.taken && <p className="errorREG" id='usererror'>{errors.taken}</p>}
         </div>
-        <div className="inputGroup2">
-          <div className="inputHeading">PASSWORD</div>
+        <div className="inputGroup2REG">
+          <div className="inputHeadingREG">PASSWORD</div>
           <input 
-          className="inputField" 
+          className="inputFieldREG" 
           type="password" 
           id='password' 
           name='password'
           onChange={handlePasswordChange}/>
           {errors.pass && <p className="error" id='passerror'>{errors.pass}</p>}
         </div>
-        <div className="inputGroup2">
-          <div className="inputHeading">REPEAT PASSWORD</div>
+        <div className="inputGroup2REG">
+          <div className="inputHeadingREG">REPEAT PASSWORD</div>
           <input 
-          className="inputField" 
+          className="inputFieldREG" 
           type="password" 
           id='confirmpass' 
           name='confirmpass'
@@ -117,11 +126,11 @@ function Register(){
           {errors.confirm && <p className="error" id='confirmerror'>{errors.confirm}</p>}
         </div>
       </div>
-      <div className="loginButtonBox">
+      <div className="loginButtonBoxREG">
       {errors.match && <p className="error" id='matcherror'>{errors.match}</p>}
-        <button className="submitButton" type='submit'>REGISTER</button>
+        <button className="submitButtonREG" type='submit'>REGISTER</button>
         
-        <div className="registerCall">
+        <div className="registerCallREG">
           <a href={`/`}>ALREADY HAVE AN ACCOUNT?</a>
         </div>
       </div>

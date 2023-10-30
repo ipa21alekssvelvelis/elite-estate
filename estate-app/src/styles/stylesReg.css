@@ -8,63 +8,41 @@
    flex-wrap: wrap;
 }
 
-.topHeading{
+.topHeadingREG{
     width: 100%;
     height: 170px;
     background-color: transparent;
     display: flex;
     flex-wrap: wrap;
+    overflow-y: hidden;
 }
 
-.mainHeadingTextBox{
+.mainHeadingTextBoxREG{
     height: 150px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    overflow-y: hidden;
     
 }
+.midLineREG {
+	width: 400px;
+	height: 0px;
+	border: 3px solid #FFB000;
+	margin: 0 auto;
+}
+.img1REG{
 
-.leftHeading{
-    width: 270px;
-    height: 100%;
-    background-color: transparent;
-    font-family: 'Jockey One', sans-serif;
-    color: white;
-    font-size: 80px;
-    text-align: center;
-    line-height: 120px;
-}
-.leftHeading span{
-    margin-left: 171px;
-}
-.midHeading{
-    width: 110px;
- height: 100%;
- background-color: transparent;
- font-family: 'Marck Script', cursive;
- color: #FFB000;
- font-size: 110px;
- text-align: center;
- line-height: 170px;
-}
-.rightHeading{
-    width: 270px;
-    height: 100%;
-    background-color: transparent;
-    font-family: 'Jockey One', sans-serif;
-    color: white;
-    font-size: 80px;
-    text-align: center;
-    line-height: 170px;
-}
-.rightHeading span{
-    margin-left: -143px;
+    height: 160px;
+    overflow-y: hidden;
 }
 
-.loginBox{
-    width: 370px;
-    min-height: 480px;
-    margin: 20px auto;
+
+
+.loginBoxREG{
+    width: 333px;
+    margin: 0 auto;
+    margin-top: 20px;
     background-color: #004225;
     border-radius: 11px;
     border: #FFB000 3px solid;
@@ -73,7 +51,7 @@
     flex-direction:column;
 }
 
-.loginHeading{
+.loginHeadingREG{
     width: 100%;
     height: 60px;
     font-family: 'Jockey One', sans-serif;
@@ -82,32 +60,32 @@
     text-align: center;
 }
 
-.loginMidBox{
+.loginMidBoxREG{
     width: 320px;
-    min-height: 300px;
+    min-height: 270px;
     border-bottom: #FFB000 3.6px solid;
-    margin: auto;
+    margin: -15px auto;
     border-radius: 17px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-.inputGroup{
+.inputGroupREG{
     width: 100%;
     height: 40px;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
 }
-.inputGroup1{
+.inputGroup1REG{
     width: 100%;
     height: 40px;
     display: flex;
     flex-wrap: wrap;
     margin-top: 12px;
 }
-.inputGroup2{
+.inputGroup2REG{
     width: 100%;
     height: 40px;
     display: flex;
@@ -116,7 +94,7 @@
 }
 
 
-.inputHeading{
+.inputHeadingREG{
     width: 100%;
     height: 40px;
     font-family: 'Jockey One', sans-serif;
@@ -126,7 +104,7 @@
     line-height: 40px;
     margin-top: 10px;
 }
-.inputField{
+.inputFieldREG{
     width: 80%;
     height: 28px;
     margin: 0px auto;
@@ -138,15 +116,16 @@
     color: white;
 
 }
-.loginButtonBox{
+.loginButtonBoxREG{
     width: 100%;
-    height: 109px;
+    height: 93px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-top: 25px;
 }
 
-.submitButton{
+.submitButtonREG{
     width: 200px;
     height: 42px;
     background-color: #004225;
@@ -162,7 +141,7 @@
     text-align: center;
     cursor: pointer;
 }
-.registerCall{
+.registerCallREG{
     width: 100%;
     height: 20px;
 display: flex;
@@ -176,7 +155,7 @@ margin: 0 auto;
 
 }
 
-.menuButton{
+.menuButtonREG{
     width: 65px;
     height: 65px;
     border-radius: 16px;
@@ -193,7 +172,7 @@ margin: 0 auto;
     cursor: pointer;
 
 }
-.menuBar{
+.menuBarREG{
     width: 400px;
     height: 100%;
     background-color: #004225;
@@ -208,19 +187,20 @@ img{
     width: 80%;
     margin: auto;
 }
-.mainHeadingTextBox{
+.mainHeadingTextBoxREG{
     height: 5%;
 }
-.loginBox{
+.loginBoxREG{
+    width: 80%;
+
+}
+.inputFieldREG{
     width: 80%;
 }
-.inputField{
-    width: 80%;
-}
-.loginMidBox{
+.loginMidBoxREG{
     width: 85%;
 }
-.menuButton{
+.menuButtonREG{
     width: 40px;
     height: 40px;
     font-size: 45px;

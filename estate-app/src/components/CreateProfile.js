@@ -107,75 +107,77 @@ function CreateProfile() {
     return (
         <>
             <Menu />
-            <div className="topHeading">
-                <div className="mainHeadingTextBox">
-                    <img className="img1" src={image} alt="" />
+            <div className="topHeadingCR">
+                <div className="mainHeadingTextBoxCR">
+                    <img className="img1CR" src={image} alt="" />
                 </div>
             </div>
-            <div className="midLine"></div>
-            <div className="underMid">
-                <div className="smallBox">
-                    <div className="mainHeadingTextBox2">
+            <div className="midLineCR"></div>
+            <div className="underMidCR">
+                <div className="smallBoxCR">
+                    <div className="mainHeadingTextBox2CR">
                         <img src={image2} alt="" />
                     </div>
                 </div>
             </div>
-            <div className="midLine2"></div>
-              <div className="midContainer">
-                <form className="midBox" onSubmit={handleSubmit}>
-                    <div className="boxHeading">PROFILE PERSONALIZATION</div>
-                    <div className="formBlock">
-                        <div className="blockLabel">NAME</div>
+            <div className="midLine2CR"></div>
+              <div className="midContainerCR">
+                <form className="midBoxCR" onSubmit={handleSubmit}>
+                    <div className="boxHeadingCR">PROFILE PERSONALIZATION</div>
+                    <form>
+                    <div className="formBlockCR">
+                        <div className="blockLabelCR">NAME</div>
                         <input
-                            className="inputFieldUnder"
+                            className="inputFieldUnderCR"
                             type="text"
                             id='name'
                             value={name}
                             onChange={handleNameChange} />
                         {errors.name && <p className="error">{errors.name}</p>}
                     </div>
-                    <div className="formBlock">
-                        <div className="blockLabel">EMAIL</div>
+                    <div className="formBlockCR">
+                        <div className="blockLabelCR">EMAIL</div>
                         <input
-                            className="inputFieldUnder"
+                            className="inputFieldUnderCR"
                             type="text"
                             id='email'
                             value={email}
                             onChange={handleEmailChange} />
                         {errors.email && <p className="error">{errors.email}</p>}
                     </div>
-                    <div className="formBlock">
-                        <div className="blockLabel">SURNAME</div>
+                    <div className="formBlockCR">
+                        <div className="blockLabelCR">SURNAME</div>
                         <input
-                            className="inputFieldUnder"
+                            className="inputFieldUnderCR"
                             type="text"
                             id='surname'
                             value={surname}
                             onChange={handleSurnameChange} />
                         {errors.surname && <p className="error">{errors.surname}</p>}
                     </div>
-                    <div className="formBlock">
-                        <div className="blockLabel">PERSONAL CODE</div>
+                    <div className="formBlockCR">
+                        <div className="blockLabelCR">PERSONAL CODE</div>
                         <input
-                            className="inputFieldUnder"
+                            className="inputFieldUnderCR"
                             type="text"
                             id='personas-kods'
                             value={PersonasKods}
                             onChange={handlePersonasKodsChange} />
                           {errors.PersonasKods && <p className='error'>{errors.PersonasKods}</p>}
                     </div>
-                    <div className="formBlock">
-                        <div className="blockLabel">PHONE</div>
+                    <div className="formBlockCR">
+                        <div className="blockLabelCR">PHONE</div>
                         <input
-                            className="inputFieldUnder"
+                            className="inputFieldUnderCR"
                             type="text"
                             id='phone'
                             value={phone}
                             onChange={handlePhoneChange} />
                         {errors.phone && <p className="error">{errors.phone}</p>}
                     </div>
-                    <div className="buttonBox">
-                      <button className="saveButton">SAVE</button>
+                    </form>
+                    <div className="buttonBoxCR">
+                      <button className="saveButtonCR">SAVE</button>
                     </div>
                 </form>
             </div>
