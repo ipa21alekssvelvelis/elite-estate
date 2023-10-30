@@ -1,0 +1,42 @@
+.menuButton{
+    width: 65px;
+    height: 65px;
+    border: none;
+    border-radius: 16px;
+    background-color: #004225;
+    filter: drop-shadow(2px 3px 3px #FFB000);
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    color: white;
+    font-size: 80px;
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    line-height: 65px;
+    cursor: pointer;
+    z-index: 19;
+
+}
+.menuBar{
+    width: 400px;
+    border: none;
+    height: 100%;
+    background-color: #004225;
+    position: fixed;
+    border-right: #FFB000 10px solid;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: none;
+    z-index: 20;
+}
+.closeButton{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-family: Jockey One;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}

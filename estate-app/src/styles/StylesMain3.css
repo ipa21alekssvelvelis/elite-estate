@@ -1,0 +1,283 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../assets/jaunakais.jpg);
+	background-size: contain;
+	display: flex;
+	flex-direction: column;
+    overflow-x: hidden;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+	
+}
+*::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
+.topHeading {
+	width: 100%;
+	height: 115px;
+	background-color: transparent;
+	display: flex;
+	flex-wrap: wrap;
+    overflow-x: hidden;
+}
+.img1{
+
+    height: 120px;
+}
+
+.mainHeadingTextBox {
+	height: 150px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+    
+}
+
+.mainHeadingTextBox2 {
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+    
+}
+
+.leftHeading {
+	width: 270px;
+	height: 100%;
+	background-color: transparent;
+	font-family: 'Jockey One', sans-serif;
+	color: white;
+	font-size: 80px;
+	text-align: center;
+	line-height: 120px;
+}
+
+.leftHeading span {
+	margin-left: 171px;
+}
+
+.leftHeadingSmall {
+	width: 46px;
+	height: 100%;
+	background-color: transparent;
+	font-family: 'Jockey One', sans-serif;
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	line-height: 90px;
+}
+
+.leftHeadingSmall span {
+	margin-left: -4px;
+}
+
+.midHeading {
+	width: 110px;
+	height: 100%;
+	background-color: transparent;
+	font-family: 'Marck Script', cursive;
+	color: #FFB000;
+	font-size: 110px;
+	text-align: center;
+	line-height: 170px;
+}
+
+.midHeadingSmall {
+	width: 70PX;
+	height: 100%;
+	background-color: transparent;
+	font-family: 'Marck Script', cursive;
+	color: #FFB000;
+	font-size: 90px;
+	text-align: center;
+	line-height: 140px;
+}
+
+.rightHeading {
+	width: 270px;
+	height: 100%;
+	background-color: transparent;
+	font-family: 'Jockey One', sans-serif;
+	color: white;
+	font-size: 80px;
+	text-align: center;
+	line-height: 170px;
+}
+
+.rightHeading span {
+	margin-left: -143px;
+}
+
+.rightHeadingSmall {
+	width: 100px;
+	height: 100%;
+	background-color: transparent;
+	font-family: 'Jockey One', sans-serif;
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	line-height: 160px;
+	display: flex;
+}
+
+.rightHeadingSmall span {
+	margin-left: -10px;
+}
+
+.menuButton {
+	width: 65px;
+	height: 65px;
+	border-radius: 16px;
+	background-color: #004225;
+	filter: drop-shadow(2px 3px 3px #FFB000);
+	position: fixed;
+	left: 20px;
+	top: 20px;
+	color: white;
+	font-size: 80px;
+	font-family: 'Jockey One', sans-serif;
+	text-align: center;
+	line-height: 65px;
+	cursor: pointer;
+    z-index: 1021030;
+}
+
+.menuBar {
+	width: 400px;
+	height: 100%;
+	background-color: #004225;
+	position: fixed;
+	border-right: #FFB000 10px solid;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	display: none;
+}
+
+.midLine {
+	width: 400px;
+	height: 0px;
+	border: 3px solid #FFB000;
+	margin: 0 auto;
+}
+
+.midLine2 {
+	width: 100%;
+	height: 0px;
+	border: 3px solid #F5F5DC;
+	margin: -11px auto;
+}
+
+.underMid {
+	width: 400px;
+	height: 90px;
+	margin: 10px auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.midContainer{
+	width: 100%;
+	height: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+.midBox{
+	width: 60%;
+	height: 88%;
+	margin: auto;
+	border-radius: 13px;
+	border-top: 7px solid #FFB000;
+	border-bottom: 7px solid #FFB000;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-color: #004225;
+}
+
+form{
+	width: 70%;
+	height: 60%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.formBlock{
+	width: 48%;
+	height: 76px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.blockLabel{
+	width: 100%;
+	height: 40%;
+	color: WHITE;
+	text-align: center;
+	font-family: Jockey One;
+	font-size: 27px;
+	line-height: 32px;
+}
+.boxHeading{
+    width: 100%;
+    height: 60px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    line-height: 65px;
+    cursor: pointer;
+}
+.inputFieldUnder{
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+    background-color: #004225;
+    border: none;
+    border-top: #FFB000 4px solid;
+    border-radius: 3px;
+    filter: drop-shadow(2px 5px 6px #000000);
+    color: white;
+
+}
+.buttonBox{
+	width: 70%;
+	height: 12%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.saveButton{
+
+	width: 250px;
+	height: 46px;
+	background-color: #004225;
+	border: none;
+	border-bottom: 4px solid #FFB000;
+	border-radius: 5px;
+	box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.70);
+	cursor: pointer;
+	margin: auto;
+	color: WHITE;
+	text-align: center;
+	font-family: Jockey One;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
