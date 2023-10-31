@@ -15,7 +15,7 @@ function HouseEdit(){
         
         <>
         
-        <div className="container">
+        <div className="containerMAIN4">
         <Menu/>
       <div class="topHeadingMAIN4">
         <div class="mainHeadingTextBoxMAIN4">
