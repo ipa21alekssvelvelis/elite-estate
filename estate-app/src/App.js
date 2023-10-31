@@ -9,6 +9,7 @@ import HouseEdit from './components/HouseEdit.js';
 import Cookies from 'js-cookie';
 import { UserProvider } from './components/UserContext';
 
+
 function App() {
   const isAuthenticated = !!Cookies.get('userID');
   const isFirstTime = !!Cookies.get('sellerID');
@@ -45,7 +46,7 @@ function App() {
             )}
           </Routes>
         </Router> */}
-        <HouseView/>
+        <IndexList/>
       </div>
     </UserProvider>
   );
