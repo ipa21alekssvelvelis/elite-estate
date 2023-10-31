@@ -6,6 +6,7 @@ import Register from './components/Register';
 import IndexList from './components/IndexList';
 import HouseView from './components/HouseView.js';
 import HouseEdit from './components/HouseEdit.js';
+import FakePreview from './components/FakePreview.js';
 import Cookies from 'js-cookie';
 import { UserProvider } from './components/UserContext';
 
@@ -17,7 +18,7 @@ function App() {
   return (
     <UserProvider>
       <div className="container">
-        {/* <Router>
+        <Router>
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
@@ -45,8 +46,8 @@ function App() {
               <Route index element={<Navigate to="/login" />} /> 
             )}
           </Routes>
-        </Router> */}
-        <HouseEdit/>
+        </Router>
+      
       </div>
     </UserProvider>
   );
