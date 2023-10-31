@@ -73,4 +73,11 @@
   .overlay.visible {
     display: block; /* Show the overlay when the menu is open */
   }
-  
+  @media only screen and (max-width: 600px) {
+    .menuButton{
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 45px;
+    }
+  }
