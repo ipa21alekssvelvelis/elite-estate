@@ -5,11 +5,12 @@
 
 .containerMAIN4 {
     width: 100vw;
+    height: 109vh;
     background-image: url(../assets/jaunakais.jpg);
     background-size: contain;
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
+    overflow-y: hidden;
     background-repeat: repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -23,7 +24,7 @@
 
 .topHeadingMAIN4 {
     width: 100%;
-    height: 115px;
+    height: 89px;
     background-color: transparent;
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +32,7 @@
 }
 .img1MAIN4{
 
-    height: 60px;
+    height: 40px;
     margin-bottom: 15px;
 }
 
@@ -44,7 +45,7 @@
 }
 
 .mainHeadingTextBox2MAIN4 {
-    height: 100%;
+    height: 30px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -136,24 +137,6 @@
     margin-left: -10px;
 }
 
-.menuButtonMAIN4 {
-    width: 65px;
-    height: 65px;
-    border-radius: 16px;
-    background-color: #004225;
-    filter: drop-shadow(2px 3px 3px #FFB000);
-    position: fixed;
-    left: 20px;
-    top: 20px;
-    color: white;
-    font-size: 80px;
-    font-family: 'Jockey One', sans-serif;
-    text-align: center;
-    line-height: 65px;
-    cursor: pointer;
-    z-index: 1021030;
-}
-
 .menuBarMAIN4 {
     width: 400px;
     height: 100%;
@@ -176,12 +159,12 @@
     width: 100%;
     height: 0px;
     border: 3px solid #F5F5DC;
-    margin: -11px auto;
+    margin: 15px auto;
 }
 
 .underMidMAIN4 {
     width: 400px;
-    height: 90px;
+    height: 20px;
     margin: 10px auto;
     display: flex;
     flex-wrap: wrap;
@@ -191,7 +174,7 @@
 
 .smallBoxMAIN4 {
     width: 400px;
-    height: 100%;
+    height: 20px;
     margin: auto;
 }
 
@@ -257,8 +240,8 @@
 
 
 .editContainerMAIN4 {
-    width: 1000px;
-    height: 550px;
+    width: 70%;
+    height: 61%;
     border: 3px solid #FFB000;
     margin: 50px auto;
     background-image: url(../assets/jaunakais.jpg);
@@ -271,7 +254,7 @@
 
 .topHeading2MAIN4 {
     width: 100%;
-    height: 35px;
+    height: 25px;
     color: #FFF;
     text-align: center;
     font-family: Jockey One;
@@ -289,32 +272,32 @@
     display: flex;
 }
 .leftMAIN4 {
-    width: 63%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 .rightMAIN4 {
-    width: 37%;
+    width: 50%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 .mainImageContainerMAIN4 {
-    width: 90%;
-    height: 310px;
+    width: 80%;
+    height: 60%;
     border: 3px solid #FFB000;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     background-color: #004225;
 }
 .underImageContainerMAIN4 {
     width: 80%;
-    margin: 20px auto;
+    margin: 10px auto;
     height: 80px;
     border: 2px solid #FFB000;
     display: flex;
@@ -345,7 +328,7 @@
 }
 
 .boxMAIN4 {
-    width: 95%;
+    width: 80%;
     height: 96%;
     margin: auto;
     display: flex;
@@ -356,7 +339,7 @@
 }
 .boxHeadingMAIN4 {
     width: 100%;
-    height: 60px;
+    height: 50px;
     color: white;
     font-size: 30px;
     font-family: 'Jockey One', sans-serif;
@@ -367,7 +350,7 @@
 
 .descriptionBoxMAIN4 {
     width: 90%;
-    height: 188px;
+    height: 130px;
     margin: 15px auto;
     border-top: 4.6px solid #FFB000 ;
     border-bottom: 4.6px solid #FFB000 ;
@@ -381,7 +364,7 @@
 }
 .inputFieldMAIN4 {
     width: 80%;
-    height: 40px;
+    height: 30px;
     margin: 0px auto;
     background-color: #004225;
     border: none;
@@ -411,7 +394,7 @@
     }
     .aboutBoxMAIN4 {
         width: 100%;
-        height: 140px;
+        height: 130px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -419,7 +402,7 @@
     }
 .inputFieldDescMAIN4 {
     width: 100%;
-    height: 136px;
+    height: 100px;
     margin: -16px auto;
     background-color: #004225;
     border: none;
@@ -457,7 +440,7 @@
 }
 
 .labelMAIN4 {
-    width: 30%;
+    width: 20%;
     height: 100%;
     line-height: 40px;
     color: white;
@@ -466,7 +449,7 @@
 
 }
 .infoMAIN4 {
-    width: 70%;
+    width: 60%;
     height: 100%;
     line-height: 40px;
     color: white;
