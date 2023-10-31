@@ -211,6 +211,22 @@ margin: auto;
     display: flex;
     justify-content: space-between;
 }
+.buttonBoxMAIN2{
+    width: 95%;
+    height: 65px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.closeButtonMAIN2{
+    background-color: red;
+    border: none;
+}
+
+.closeButton2MAIN2{
+    background-color: red;
+    border: none;
+}
 
 .buttonMAIN2{
     width: 180px;
@@ -242,8 +258,9 @@ margin: auto;
     z-index: 10;
     display: flex;
     flex-wrap: wrap;
-   
-
+}
+.visible{
+    display: none;
 }
 .hiddenContactMAIN2{
     width: 500px;
