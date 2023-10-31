@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Logout from '../components/Logout.js';
 import '../styles/StylesMenu.css';
+import ImageMenu from '../assets/image-removebg-preview.png';
 
 function Menu() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -25,6 +26,7 @@ function Menu() {
         {isMenuOpen ? '-' : '+'}
       </button>
       <div id='menuBar' className="menuBar">
+      <img className="imageMenu" src={ImageMenu} alt="" />
         <div className='containerMenu'>
           <button onClick={openMenu} id='menuButton' className="menuButton">
             {isMenuOpen ? '-' : '+'}

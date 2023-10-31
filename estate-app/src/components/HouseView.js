@@ -3,24 +3,32 @@ import '../styles/StylesMain2.css';
 import image from '../assets/image-removebg-preview.png';
 import image2 from '../assets/image1.jpg';
 import Menu from './Menu';
-import OpenDivs from './OpenDivs';
+import AdditionalInfo from './AdditionalInfo.js'
+import ContactSeller from './ContactSeller.js';
 
 function HouseView() {
-  const [additionalVisible, setAdditionalVisible] = useState('none');
-  const [contactVisible, setContactVisible] = useState('none');
+  const [additionalInfoVisible, setAdditionalInfoVisible] = useState(false);
 
-  const openDiv = () => {
-    setAdditionalVisible('flex');
-  };
+  // Function to toggle the additional information
+  function toggleAdditionalInfo() {
+    setAdditionalInfoVisible(!additionalInfoVisible);
+  }
+  const [contactSellerVisible, setContactSellerVisible] = useState(false);
 
-  const openDiv2 = () => {
-    setContactVisible('flex');
-  };
+  // Function to toggle the "Contact Seller" component
+  function toggleContactSeller() {
+    setContactSellerVisible(!contactSellerVisible);
+  }
 
   return (
     <>
       <Menu />
-      <OpenDivs openDiv={openDiv} openDiv2={openDiv2} />
+   
+      
+
+
+      
+
       <div class="topHeadingMAIN2">
         <div class="mainHeadingTextBoxMAIN2">
           <a href="index.html">
@@ -74,15 +82,18 @@ function HouseView() {
             </div>
 
             <div class="buttonBoxMAIN2">
-              <button className="buttonMAIN2" onClick={OpenDivs.openDiv}>
+            <button className="buttonMAIN2" onClick={toggleAdditionalInfo}>
+              {/* <button className="buttonMAIN2" onClick={() => setAdditionalInfoVisible(true)}> */}
                 ADDITIONAL INFO
               </button>
-              <button className="buttonMAIN2" onClick={OpenDivs.openDiv2}>
+              <button className="buttonMAIN2" onClick={toggleContactSeller}>
                 CONTACT SELLER
               </button>
             </div>
           </div>
         </div>
+         {additionalInfoVisible && <AdditionalInfo />}
+         {contactSellerVisible && <ContactSeller />}
       </div>
     </>
   );
