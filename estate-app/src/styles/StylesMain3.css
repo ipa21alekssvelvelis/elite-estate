@@ -308,6 +308,7 @@ form{
 	.midLine2CR{
 		width: 100%;
 		border: 2px solid white;
+		margin-top: 10px;
 	}
 	.img1CR{
 		height: 65px;

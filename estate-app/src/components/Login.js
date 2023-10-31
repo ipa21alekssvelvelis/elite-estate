@@ -78,7 +78,7 @@ function Login() {
             <div class="topHeadingLOG">
         <div class="mainHeadingTextBoxLOG">
           <a href="index.html">
-            <img src={image} alt="" />
+            <img class="imgLOG" src={image} alt="" />
           </a>
         </div>
       </div>

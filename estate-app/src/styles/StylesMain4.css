@@ -464,13 +464,13 @@
 }
 .buttonBoxMAIN4 {
     width: 100%;
-    height: 58px;
+    height: 21px;
     display: flex;
 }
 .saveButtonMAIN4 {
 
-        width: 180px;
-        height: 35px;
+        width: 160px;
+        height: 25px;
         background-color: #004225;
         border: none;
         border-bottom: 4px solid #FFB000;
@@ -481,7 +481,7 @@
         color: WHITE;
         text-align: center;
         font-family: Jockey One;
-        font-size: 20px;
+        font-size: 16.4px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
