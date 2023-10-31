@@ -17,7 +17,7 @@ function App() {
   return (
     <UserProvider>
       <div className="container">
-        <Router>
+        {/* <Router>
           <Routes>
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
@@ -45,7 +45,8 @@ function App() {
               <Route index element={<Navigate to="/login" />} /> 
             )}
           </Routes>
-        </Router>
+        </Router> */}
+        <HouseEdit/>
       </div>
     </UserProvider>
   );

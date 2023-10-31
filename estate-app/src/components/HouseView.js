@@ -39,12 +39,9 @@ function HouseView() {
 
       <div class="midContainerMAIN2">
         <div class="leftContainerMAIN2">
-          <section class="imageBoxMAIN2 swiperMAIN2 mySwiperMAIN2">
-            <div class="wrapperMAIN2 swiper-wrapperMAIN2">
-              <div class="slideMAIN2">
+          <section class="imageBoxMAIN2">
                 <img src={image2} alt="" class="imageMAIN2" />
-              </div>
-            </div>
+
           </section>
           <div class="underImgMAIN2">
             <a href="" class="smallImageBoxMAIN2"></a>

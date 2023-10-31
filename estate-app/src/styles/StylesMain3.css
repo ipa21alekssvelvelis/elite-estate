@@ -1,20 +1,12 @@
-
-
-
-.container {
-	width: 100vw;
-	min-height: 100vh;
-	background-image: url(../assets/jaunakais.jpg);
-	background-size: contain;
-	display: flex;
-	flex-direction: column;
-    overflow-x: hidden;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
-	
+*{
+    margin: 0;
+    padding: 0;
 }
+body{
+	background-image: url(../assets/jaunakais.jpg);
+	background-size: cover; 
+}
+
 .error{
 	width: 100%;
 	text-align: center;
@@ -291,4 +283,36 @@ form{
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
+}
+@media only screen and (max-width: 600px) {
+	.midBoxCR{
+		width: 80%;
+	}
+	.formBlockCR{
+		width: 100%;
+	}
+	.inputFieldUnderCR{
+		width: 100%;
+	}
+	.img2CR{
+		height: 35px;
+	}
+	.underMidCR{
+		height: 50px;
+		width: 100%;
+	}
+	.midLineCR{
+		width: 80%;
+		border: 2px solid #FFB000;
+	}
+	.midLine2CR{
+		width: 100%;
+		border: 2px solid white;
+	}
+	.img1CR{
+		height: 65px;
+	}
+	.boxHeadingCR{
+		font-size: 22px;
+	}
 }

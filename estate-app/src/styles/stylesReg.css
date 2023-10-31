@@ -22,7 +22,7 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    overflow-y: hidden;
+
     
 }
 .midLineREG {
@@ -152,6 +152,7 @@ a{
     font-size: 10px;
     font-family: 'Jockey One', sans-serif;
 margin: 0 auto;
+width: auto;
 
 }
 
@@ -184,18 +185,26 @@ margin: 0 auto;
 }
 @media only screen and (max-width: 600px) {
 img{
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
 .mainHeadingTextBoxREG{
     height: 5%;
+}
+.img1REG{
+
+    height: 70px;
+    overflow-y: scroll;
+}
+.midLineREG{
+    width: 80%;
 }
 .loginBoxREG{
     width: 80%;
 
 }
 .inputFieldREG{
-    width: 80%;
+    width: 90%;
 }
 .loginMidBoxREG{
     width: 85%;
