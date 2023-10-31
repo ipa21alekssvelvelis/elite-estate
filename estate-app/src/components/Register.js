@@ -102,8 +102,8 @@ function Register(){
           id='username' 
           name='username'
           onChange={handleUsernameChange}/>
-          {errors.user && <p className="errorREG" id='usererror'>{errors.user}</p>}
-          {errors.taken && <p className="errorREG" id='usererror'>{errors.taken}</p>}
+          {errors.user && <p className="error" id='usererror'>{errors.user}</p>}
+          {errors.taken && <p className="error" id='usererror'>{errors.taken}</p>}
         </div>
         <div className="inputGroup2REG">
           <div className="inputHeadingREG">PASSWORD</div>
