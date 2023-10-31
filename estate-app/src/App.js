@@ -45,7 +45,7 @@ function App() {
             )}
           </Routes>
         </Router> */}
-        <IndexList/>
+        <HouseEdit/>
       </div>
     </UserProvider>
   );

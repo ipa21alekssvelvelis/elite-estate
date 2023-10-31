@@ -19,17 +19,13 @@ function HouseEdit(){
         <Menu/>
       <div class="topHeadingMAIN4">
         <div class="mainHeadingTextBoxMAIN4">
-          <img class="img1MAIN2" src={image} alt=""/>
+          <img class="img1MAIN4" src={image} alt=""/>
         </div>
       </div>
       <div class="midLineMAIN4"></div>
-      <div class="underMidMAIN4">
-        <div class="smallBoxMAIN4">
           <div class="mainHeadingTextBox2MAIN4">
-            <img src={image2} class="img1MAIN4"  alt=""/>
+            <img src={image2} class="img2MAIN4"  alt=""/>
           </div>
-        </div>
-      </div>
       <div class="midLine2MAIN4"></div>
 
 

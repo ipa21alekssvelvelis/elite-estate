@@ -177,4 +177,14 @@
 		display: flex;
 		font-size: 20px;
 	}
+	.listBigBoxMAIN{
+		height: 225px;
+	}
+	.listBoxTopMAIN{
+		height: 70%;
+	}
+	.listBoxBotMAIN{
+		height: 30%;
+		line-height: 60px;
+	}
 }

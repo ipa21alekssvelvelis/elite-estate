@@ -1,20 +1,12 @@
-
-
-
-.container {
-	width: 100vw;
-	min-height: 100vh;
-	background-image: url(../assets/jaunakais.jpg);
-	background-size: contain;
-	display: flex;
-	flex-direction: column;
-    overflow-x: hidden;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    background-size: cover;
-
-	
+*{
+    margin: 0;
+    padding: 0;
 }
+body{
+	background-image: url(../assets/jaunakais.jpg);
+	background-size: cover; 
+}
+
 .error{
 	width: 100%;
 	text-align: center;
