@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+}
+/* .containerF{
+    width: 100vw;
+   background-image: url(../assets/jaunakais.jpg);
+   background-size: cover;
+   display: flex;
+   flex-wrap: wrap;
+} */
+.topHeadingF{
+    width: 100%;
+    height: 170px;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+.selahaF{
+    height: 100px;
+}
+.stripinaBoxF{
+width:100%;
+    height: 30px;
+margin: 5 auto;
+display: flex;
+}
+.stripinaBox2F{
+    width:100%;
+        height: 10%;
+    margin: 5 auto;
+    display: flex;
+    }
+.stripina2F{
+    margin: auto;
+    width: 100%;
+    border: 2px white solid
+}
+.stripinaF{
+    margin: auto;
+    width: 400px;
+    border: 3px #FFB000 solid;
+}
+.stripina3F{
+    margin: auto;
+    width: 70%;
+    border: 3px #FFB000 solid;
+}
+.mainHeadingTextBoxF{
+    justify-content: center;
+    height: 115px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.leftHeadingF{
+    width: 270px;
+    height: 100%;
+    background-color: transparent;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    line-height: 120px;
+}
+.leftHeadingF span{
+    margin-left: 171px;
+}
+.midHeadingF{
+    width: 110px;
+ height: 100%;
+ background-color: transparent;
+ font-family: 'Marck Script', cursive;
+ color: #FFB000;
+ font-size: 110px;
+ text-align: center;
+ line-height: 170px;
+}
+.rightHeadingF{
+    width: 270px;
+    height: 100%;
+    background-color: transparent;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    line-height: 170px;
+}
+.rightHeadingF span{
+    margin-left: -143px;
+}
+
+.loginBoxF{
+    width: 370px;
+    height: 480px;
+    margin: 20px auto;
+    background-color: #004225;
+    border-radius: 11px;
+    border: #FFB000 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+}
+.nameboxF{
+    width: 70%;
+    height: 70%;
+    min-height: 300px;
+    margin: 20px auto;
+    background-color: #004225;
+    border: #FFB000 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+}
+.buttonboxF{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.previewF{
+    width: 50%;
+    height: auto;
+    margin: 20px auto;
+    /* background-image: url(../assets/jaunakais.jpg);
+    background-size: cover; */
+    background-color: #004225;
+    border: #FFB000 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.photoboxF{
+    width: 80%;
+    height: 40%;
+    margin: 20px;
+    margin-bottom: -5px;
+    background-color: black;
+    border: #FFB000 3px solid;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.photopartF{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.photopartHeadingF{
+    height: 15%;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+.miniphotosF{
+    width: 70%;
+    height: 15%;
+    margin: 20px auto;
+    background-color: black;
+    border: #FFB000 1px solid;
+    display: flex;
+    flex-direction: row;
+}
+.miniimageF{
+    width: 15%;
+    height: 80%;
+    margin: auto;
+    background-color: black;
+    border: white 1px solid;
+}
+.miniimageF:hover{
+    border: white 4px solid;
+}
+.infoBoxF{
+    width: 1000px;
+    height: 550px;
+    margin: 20px auto;
+    background-color: #004225;
+    border-radius: 11px;
+    border: #FFB000 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: top;
+    align-items: left;
+}
+
+.loginHeadingF{
+    width: 100%;
+    height: 15%;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+.loginHeadingF2{
+    width: 100%;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+.imageUploadHeadingF2{
+    width: 80%;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+.imageUploadDividingF2{
+    gap: 15px;
+    flex-direction: column;
+    width: 80%;
+    margin: 8px auto;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+.imageUploadAddF2{
+    width: 40%;
+    background-color: #004225;
+    border: none;
+    border-bottom: #FFB000 4px solid;
+    border-radius: 5px;
+    filter: drop-shadow(2px 5px 6px #000000);
+    margin: 10px auto;
+    color: white;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+.loginTextF{
+    width: 25%;
+    height: 60px;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+.logintext2F{
+    width: 50%;
+    /* height: 30%; */
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+.loginText2F{
+    width: 100%;
+    height: 30%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.houseinfoF{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.loginMidBoxF{
+    width: 320px;
+    height: 270px;
+    border-bottom: #FFB000 3.6px solid;
+    margin: auto;
+    border-radius: 17px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.inputGroupF{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px auto;
+}
+.inputGroup1F{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.inputGroup2F{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 36px auto;
+}
+
+
+.inputHeadingF{
+    width: 100%;
+    height: 40px;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 20px;
+}
+.inputFieldF{
+    width: 20%;
+    height: 28px;
+    margin: 12px auto;
+    margin-right: 50px;
+    background-color: #004225;
+    border: none;
+    border-top: #FFB000 4px solid;
+    border-radius: 3px;
+    filter: drop-shadow(2px 5px 6px #000000);
+    color: white;
+
+
+}
+
+.inputFieldF2{
+    width: 80%;
+    height: 28px;
+    margin: 5px auto;
+    background-color: #004225;
+    border: none;
+    border-top: #FFB000 4px solid;
+    border-radius: 3px;
+    filter: drop-shadow(2px 5px 6px #000000);
+    color: white;
+}
+.inputFieldBigF2{
+    width: 80%;
+    height: 60px;
+    margin: 1px auto;
+    background-color: #004225;
+    border: none;
+    border-top: #FFB000 4px solid;
+    border-radius: 3px;
+    filter: drop-shadow(2px 5px 6px #000000);
+    color: white;
+}
+.loginButtonBoxF{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.inputBox{
+    width: 90%;
+
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.previewBoxF{
+    width: 950px;
+    height: 480px;
+    margin: 20px auto;
+    background-color: #004225;
+    border: #FFB000 3px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.submitButtonF{
+    width: 200px;
+    height: 42px;
+    background-color: #004225;
+    border: none;
+    border-bottom: #FFB000 4px solid;
+    border-radius: 5px;
+    filter: drop-shadow(2px 5px 6px #000000);
+    margin: 10px auto;
+    color: white;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+.ssubmitButtonF{
+    width: 40%;
+    height: 35px;
+    background-color: #004225;
+    border: none;
+    border-bottom: #FFB000 4px solid;
+    border-radius: 5px;
+    filter: drop-shadow(2px 5px 6px #000000);
+    margin: 10px auto;
+    color: white;
+    font-family: 'Jockey One', sans-serif;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+.registerCallF{
+    width: 100%;
+    height: 20px;
+display: flex;
+flex-wrap: wrap;
+}
+a{
+    color: white;
+    font-size: 10px;
+    font-family: 'Jockey One', sans-serif;
+margin: 0 auto;
+
+}
+.imgFAKE{
+    width: 20%;
+}
+.menuButtonF{
+    width: 65px;
+    height: 65px;
+    border-radius: 16px;
+    background-color: #004225;
+    filter: drop-shadow(2px 3px 3px #FFB000);
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    color: white;
+    font-size: 80px;
+    font-family: 'Jockey One', sans-serif;
+    text-align: center;
+    line-height: 65px;
+    cursor: pointer;
+
+}
+.menuBarF{
+    width: 400px;
+    height: 100%;
+    background-color: #004225;
+    position: fixed;
+    border-right: #FFB000 10px solid;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: none;
+}
+.errorF{
+    font-size: 10px;
+    color: red;
+    text-align: center;
+    
+}
+.inputAddsF{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.inputAddUnderF{
+    margin: auto;
+    display: flex;
+}
+.fileUpload {
+    border-radius: 50%;
+    background: orange;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 36px;
+    width: 30%;
+    height: 45%;
+    cursor: pointer;
+}
+
+.fileUpload input[type="file"] {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+ /* .containerF{
+    width: 400px;
+ } */
+ .imgFAKE{
+    width: 60%;
+    height: 70px;
+ }
+ img{
+    width: 60%;
+    height: 70px;
+ }
+ img.selahaF{
+    height: 60px;
+    margin-top: 8px;
+ }
+ .previewF{
+    width: 80%;
+    height: auto;
+    min-height: 450px;
+    justify-content: space-between;
+ }
+ .previewBoxF{
+    width: 80%;
+    height: auto;
+    min-height: 700px;
+ }
+ .photoboxF{
+    width: 90%;
+    height: 40%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+ }
+ .photopartF{
+    width: 100%;
+ }
+.loginBoxF{
+    width: 80%;
+}
+.infoBoxF{
+    width: 80%;
+    flex-direction: column;
+}
+.stripinaF{
+    width: 70%;
+}
+.stripinaBoxF{
+    width: 100%;
+}
+.stripina2F{
+    width: 100%;
+}
+.stripinaBox2F{
+    width: 100%;
+}
+.loginHeadingF{
+    font-size: 30px;
+}
+.loginHeadingF2{
+    font-size: 15px;
+}
+.nameboxF{
+    height: 90%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.loginText2F{
+    width: 100%;
+    height: 30%;
+    font-size: 20px;
+    text-align: center;
+}
+.ssubmitButtonF{
+    font-size: 12px;
+}
+.loginTextF{
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 5%;
+    width: 100%;
+}
+.miniphotosF{
+    width: 90%;
+}
+.inputFieldF{
+    width: 50%;
+    margin: auto;
+}
+.menuButtonF{
+    width: 15%;
+    height: 5%;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainHeadingTextBoxF{
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+.topHeadingF{
+    height: 20%;
+}
+/* .loginHeadingF{
+    height: 5%;
+} */
+  }

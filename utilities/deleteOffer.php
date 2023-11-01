@@ -8,7 +8,9 @@ $db = new Database();
 
 if (isset($_GET["offerID"])) {
   $offerID = $_GET["offerID"];
+  $imageDel = $db->deleteOfferImages($offerID);
   $success = $db->deleteOffer($offerID);
-  echo json_encode(["message" => "Task deleted successfully", "offerID" => $offerID]);
+  
+  echo json_encode(["message" => "Task deleted successfully", "offerID" => $success, "sql"=>"DELETE FROM ipasumi WHERE ipasumaid ir ".$offerID]);
 }
 ?>

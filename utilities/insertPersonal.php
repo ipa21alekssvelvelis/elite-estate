@@ -18,13 +18,50 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $personasKodsToAdd = $data->PersonasKods;
     $userID = $data->isAuthenticated;
 
-        $db->insertPersonalData($nameToAdd,$surnameToAdd,$personasKodsToAdd,$phoneToAdd,$emailToAdd,$userID);
-        if ($db->insertPersonalData($nameToAdd, $surnameToAdd, $personasKodsToAdd, $phoneToAdd, $emailToAdd, $userID)) {
+    $currentPersonalData = $db->selectPersonalData();
+
+    $personasKodsExists = false;
+    $emailExists = false;
+    $phoneExists = false;
+
+    foreach($currentPersonalData as $dataset){
+        if ($dataset['personas_kods'] === $personasKodsToAdd) {
+            $personasKodsExists = true;
+        }
+        if ($dataset['telefona_nr'] === $phoneToAdd) {
+            $phoneExists = true;
+        }
+        if ($dataset['email'] === $emailToAdd) {
+            $emailExists = true;
+        }
+    }
+
+    $errors = [];
+
+    if ($personasKodsExists) {
+        $errors['PersonasKods'] = 'Personas kods already exists';
+    }
+
+    if ($emailExists) {
+        $errors['email'] = 'Email already exists';
+    }
+
+    if ($phoneExists) {
+        $errors['phone'] = 'Phone already exists';
+    }
+
+    if (!empty($errors)) {
+        echo json_encode(['errors' => $errors]);
+    } else {
+        $result = $db->insertPersonalData($nameToAdd, $surnameToAdd, $personasKodsToAdd, $phoneToAdd, $emailToAdd, $userID);
+        if ($result) {
             echo json_encode([
                 'message' => 'Inserted successfully',
+                'sellerid' => $result,
             ]);
         } else {
-            echo json_encode(['error' => 'Issues inserting']);
+            echo json_encode(['errors' => 'Issues inserting']);
         }
+    }
     }
 ?>

@@ -79,9 +79,23 @@ box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.70), 0px 4px 4px 0px rgba(0, 0, 0, 0
   .overlay.visible {
     display: block; 
   }
-  
   .imageMenu{
+    margin-left: 80px;
+  }
+  @media only screen and (max-width: 600px) {
+    .menuButton{
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 45px;
+    }
+    .menuBar{
+        width: fit-content;
+    }
+  .imageMenu{
+    margin-left: 0px;
     height: 80px;
     margin: auto;
     margin-top: 60px;
   }
+}

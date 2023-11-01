@@ -31,7 +31,7 @@
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
-    
+    justify-content: center;
 }
 
 .mainHeadingTextBox2MAIN {
@@ -64,7 +64,11 @@
 	border: 3px solid #F5F5DC;
 	margin: 5px auto;
 }
-
+.overlayImageForIndexMAIN{
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+}
 .underMidMAIN {
 	width: 400px;
 	height: 90px;
@@ -79,6 +83,25 @@
 	width: 400px;
 	height: 100%;
 	margin: auto;
+}
+
+.sortDropdownContainer {
+    margin: 10px;
+	justify-content: center;
+    display: flex;
+}
+
+.sortDropdown {
+    width: 175px;
+    background-color: #004225;
+	border: none;
+    border-bottom: 4px solid #FFB000;
+    border-radius: 4px;
+	font-size: 30px;
+	font-family: 'Jockey One', sans-serif;
+	text-align: center;
+    padding: 5px;
+	color: white
 }
 
 .sortButtonMAIN{
@@ -140,4 +163,51 @@
 	line-height: 50px;
 	cursor: pointer;
 }
-
+@media only screen and (max-width: 600px) {
+	.midLineMAIN{
+		width: 80%;
+	}
+	.midLine2MAIN{
+		width: 100%;
+	}
+	.image1{
+		height: 65px;
+	}
+	.topHeadingMAIN{
+		height: 130px;
+	}
+	.image2{
+		height: 45px;
+		width: 55%;
+	}
+	.mainHeadingTextBox2MAIN{
+		width: 100%;
+		height: 60px;
+	}
+	.smallBoxMAIN{
+		width: 100%;
+		height: 60px;
+	}
+	.underMidMAIN{
+		width: 100%;
+		height: 60px;
+	}
+	.sortButtonMAIN{
+		height: 40px;
+		width: 60%;
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		font-size: 20px;
+	}
+	.listBigBoxMAIN{
+		height: 225px;
+	}
+	.listBoxTopMAIN{
+		height: 70%;
+	}
+	.listBoxBotMAIN{
+		height: 30%;
+		line-height: 60px;
+	}
+}

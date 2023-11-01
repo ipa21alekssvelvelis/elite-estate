@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import '../styles/stylesL.css';
 import Cookies from 'js-cookie';
-import image from '../assets/image-removebg-preview.png' 
+import UserContext from './UserContext.js';
+import image from '../assets/image-removebg-preview.png'; 
 
 function Login() {
     const [user, setUser] = useState('');
@@ -9,7 +10,7 @@ function Login() {
     const [errors, setErrors] = useState({});
     const isAuthenticated = Cookies.get('userID');
     const isFirstTime = Cookies.get('sellerID');
-    console.log(isAuthenticated);
+
     const handleUsernameChange = (e) => {
         setUser(e.target.value);
     };
@@ -35,12 +36,15 @@ function Login() {
         }
         if (Object.keys(newErrors).length === 0) {
         try {
-          const response = await fetch('http://localhost:8888/datubazes/estates/utilities/userLogin.php', {
+          const response = await fetch('http://localhost:8888/datubazes/estate-main/elite-estate/utilities/userLogin.php', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
+              'Content-Type': 'Access-Control-Allow-Headers',
             },
             body: JSON.stringify({ user: user, password: pass }),
+            credentials: 'same-origin',
+            mode: 'cors',
           });
     
           if (response.ok) {
@@ -55,6 +59,7 @@ function Login() {
               }
             } else {
               if(data.sellerid){
+                console.log(data.sellerid);
                 Cookies.set('sellerID', data.sellerid, { expires: 0.25});
               }
               Cookies.set('userID', data.userid, { expires: 0.25 });
@@ -73,10 +78,9 @@ function Login() {
 
     return(
         <>
-            {/* <Menu/> */}
 
-            <div class="topHeadingLOG">
-        <div class="mainHeadingTextBoxLOG">
+            <div className="topHeadingLOG">
+        <div className="mainHeadingTextBoxLOG">
           <a href="index.html">
             <img src={image} alt="" />
           </a>

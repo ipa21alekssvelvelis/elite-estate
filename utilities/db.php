@@ -62,6 +62,17 @@ class Database{
             return $data;
         }
     }
+
+    function selectListingImages($ipasumaid) {
+        $result = $this->select("SELECT * FROM listing_images WHERE ipasumaid = $ipasumaid");
+        if ($result && $result->num_rows > 0) {
+            $data = [];
+            while ($row = $result->fetch_assoc()) {
+                $data[] = $row;
+            }
+            return $data;
+        }
+    }
    
     function insertUser($username, $password){
         $result = $this->insert("INSERT INTO users (`Username`,`Password`) VALUES ('$username', '$password')");
@@ -91,6 +102,16 @@ class Database{
         }
     }
 
+    function insertListingImage($ipasumaid, $sellerid, $image_url) {
+        $result = $this->insert("INSERT INTO listing_images (`ipasumaid`, `sellerid`, `image_url`) 
+            VALUES ($ipasumaid, $sellerid, '$image_url')");
+        if ($result) {
+            return $result;
+        } else {
+            return false;
+        }
+    }
+
     function updateOffer($id, $nosaukums, $apraksts, $platiba, $lauka_platiba, $cenas, $gulamistabu_skaits, $tualesu_skaits, $istabu_skaits, $majas_tips, $pieejams){
         $query = "UPDATE ipasumi SET 
                 `nosaukums` = '$nosaukums', 
@@ -114,14 +135,14 @@ class Database{
     }
 
     function updatePersonalData($id, $uzvards, $email, $phone){
-        $query = "UPDATE personigie SET 
-                `uzvards` = '$uzvards',
-                `telefona_nr` = '$phone',
-                `email` = '$email',
-                WHERE `userID` = $id";
+        $query = "UPDATE personigiedati SET 
+                    `uzvards` = '$uzvards',
+                    `telefona_nr` = '$phone',
+                    `email` = '$email'
+                    WHERE `userID` = $id";
         if($this->conn->query($query) === TRUE){
             return true;
-        }else{
+        } else {
             $error = $this->conn->error;
             echo "Error: $error";
             return false; 
@@ -129,7 +150,10 @@ class Database{
     }
 
     function deleteOffer($id){
-        $result = $this->select("DELETE FROM ipasumi WHERE ipasumaID = '$id'");
+        $result = $this->select("DELETE FROM ipasumi WHERE `ipasumaid` = $id");
+    }
+    function deleteOfferImages($id){
+        $result = $this->select("DELETE FROM listing_images WHERE `ipasumaid` = $id");
     }
 }
 ?>

@@ -12,7 +12,9 @@ function CreateProfile() {
     const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
     const [errors, setErrors] = useState({});
+
     const isAuthenticated = Cookies.get('userID');
+    const isSeller = Cookies.get('sellerID');
 
     const handleNameChange = (e) => {
         setName(e.target.value);

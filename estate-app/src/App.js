@@ -6,6 +6,8 @@ import Register from './components/Register';
 import IndexList from './components/IndexList';
 import HouseView from './components/HouseView.js';
 import HouseEdit from './components/HouseEdit.js';
+import EditProfile from './components/EditProfile.js';
+import FakePreview from './components/FakePreview.js';
 import Cookies from 'js-cookie';
 import { UserProvider } from './components/UserContext';
 
@@ -25,17 +27,20 @@ function App() {
               <>
                 {isFirstTime ? (
                   <>
-                    <Route path="/offerList" element={<IndexList />} />
-                    <Route path="/houseview" element={<HouseView />} />
+                    <Route path="/IndexList" element={<IndexList />} />
+                    <Route path="/houseView/:id" element={<HouseView />} />
                     <Route path="/houseedit" element={<HouseEdit />} />
-                    <Route path="/createProfile" element={<CreateProfile />} />
-                    <Route index element={<Navigate to="/offerlist" />} /> 
+                    <Route path="/FakePreview" element={<FakePreview />} />
+                    <Route path="/EditProfile" element={<EditProfile />} />
+                    <Route index element={<Navigate to="/IndexList" />} /> 
                   </>
                 ) : (
                   <>
-                    <Route path="/offerList" element={<IndexList />} />
-                    <Route path="/houseview" element={<HouseView />} />
+                    <Route path="/IndexList" element={<IndexList />} />
+                    <Route path="/houseView/:id" element={<HouseView />} />
                     <Route path="/houseedit" element={<HouseEdit />} />
+                    <Route path="/FakePreview" element={<FakePreview />} />
+                    <Route path="/EditProfile" element={<EditProfile />} />
                     <Route path="/createProfile" element={<CreateProfile />} />
                     <Route index element={<Navigate to="/createProfile" />} /> 
                   </>

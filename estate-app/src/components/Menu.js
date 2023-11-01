@@ -32,8 +32,8 @@ function Menu() {
             {isMenuOpen ? '-' : '+'}
           </button>
           <a className='routerButtons' href={`/IndexList`}>HOUSES</a>
-          <a className='routerButtons'>SELL A HOUSE</a>
-          <a className='routerButtons'>PROFILE</a>
+          <a className='routerButtons' href={`/FakePreview`}>SELL A HOUSE</a>
+          <a className='routerButtons' href={`/EditProfile`}>PROFILE</a>
           <Logout/>
         </div>
       </div>

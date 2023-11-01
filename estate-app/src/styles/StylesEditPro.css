@@ -12,10 +12,10 @@ body{
 	text-align: center;
 	margin-top: 2px;
 	font-size: 12px;
-	color: rgb(255, 26, 26);
+	color: red;
 }
 
-.topHeadingCR {
+.topHeadingEDITPRF {
 	width: 100%;
 	height: 115px;
 	background-color: transparent;
@@ -23,18 +23,18 @@ body{
 	flex-wrap: wrap;
     overflow: hidden;
 }
-.img1CR{
+.img1EDITPRF{
 
 	overflow: hidden;
     height: 120px;
 }
-.img2CR{
+.img2EDITPRF{
 
 	overflow: hidden;
     height: 60px;
 }
 
-.mainHeadingTextBoxCR {
+.mainHeadingTextBoxEDITPRF {
 	height: 150px;
 	margin: auto;
 	display: flex;
@@ -43,7 +43,7 @@ body{
     
 }
 
-.mainHeadingTextBox2CR {
+.mainHeadingTextBox2EDITPRF {
 	height: 100%;
 	margin: auto;
 	display: flex;
@@ -54,7 +54,7 @@ body{
     
 }
 
-.leftHeadingCR {
+.leftHeadingEDITPRF {
 	width: 270px;
 	height: 100%;
 	background-color: transparent;
@@ -65,11 +65,11 @@ body{
 	line-height: 120px;
 }
 
-.leftHeadingCR span {
+.leftHeadingEDITPRF span {
 	margin-left: 171px;
 }
 
-.leftHeadingSmallCR {
+.leftHeadingSmallEDITPRF {
 	width: 46px;
 	height: 100%;
 	background-color: transparent;
@@ -80,11 +80,11 @@ body{
 	line-height: 90px;
 }
 
-.leftHeadingSmallCR span {
+.leftHeadingSmallEDITPRF span {
 	margin-left: -4px;
 }
 
-.midHeadingCR {
+.midHeadingEDITPRF {
 	width: 110px;
 	height: 100%;
 	background-color: transparent;
@@ -95,7 +95,7 @@ body{
 	line-height: 170px;
 }
 
-.midHeadingSmallCR {
+.midHeadingSmallEDITPRF {
 	width: 70PX;
 	height: 100%;
 	background-color: transparent;
@@ -106,7 +106,7 @@ body{
 	line-height: 140px;
 }
 
-.rightHeadingCR {
+.rightHeadingEDITPRF {
 	width: 270px;
 	height: 100%;
 	background-color: transparent;
@@ -117,11 +117,11 @@ body{
 	line-height: 170px;
 }
 
-.rightHeadingCR span {
+.rightHeadingEDITPRF span {
 	margin-left: -143px;
 }
 
-.rightHeadingSmallCR {
+.rightHeadingSmallEDITPRF {
 	width: 100px;
 	height: 100%;
 	background-color: transparent;
@@ -133,11 +133,11 @@ body{
 	display: flex;
 }
 
-.rightHeadingSmallCR span {
+.rightHeadingSmallEDITPRF span {
 	margin-left: -10px;
 }
 
-.menuButtonCR {
+.menuButtonEDITPRF {
 	width: 65px;
 	height: 65px;
 	border-radius: 16px;
@@ -155,7 +155,7 @@ body{
     z-index: 1021030;
 }
 
-.menuBarCR {
+.menuBarEDITPRF {
 	width: 400px;
 	height: 100%;
 	background-color: #004225;
@@ -166,21 +166,21 @@ body{
 	display: none;
 }
 
-.midLineCR {
+.midLineEDITPRF {
 	width: 400px;
 	height: 0px;
 	border: 3px solid #FFB000;
 	margin: 0 auto;
 }
 
-.midLine2CR {
+.midLine2EDITPRF {
 	width: 100%;
 	height: 0px;
 	border: 3px solid #F5F5DC;
 	margin: -11px auto;
 }
 
-.underMidCR  {
+.underMidEDITPRF  {
 	width: 400px;
 	height: 90px;
 	margin: 10px auto;
@@ -190,20 +190,21 @@ body{
 	align-items: center;
 }
 
-.midContainerCR {
+.midContainerEDITPRF {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	position: absolute;
-	top: 15%;
+	top: 10%;
 	margin-top: 150px;
-	/* Remove fixed height */
   }
-.midBoxCR{
+.midBoxEDITPRF{
 	width: 50%;
 	height: 95%;
 	margin: auto;
+	margin-bottom: 25px;
+	margin-top: 25px;
 	border-radius: 13px;
 	border-top: 7px solid #FFB000;
 	border-bottom: 7px solid #FFB000;
@@ -214,20 +215,20 @@ body{
 }
 
 form{
-	width: 70%;
+	width: 100%;
 	height: 60%;
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 }
-.formBlockCR{
+.formBlockEDITPRF{
 	width: 48%;
 	height: 80px;
 	margin: 5px auto;
 	display: flex;
 	flex-wrap: wrap;
 }
-.blockLabelCR{
+.blockLabelEDITPRF{
 	width: 100%;
 	height: 40%;
 	color: WHITE;
@@ -236,7 +237,7 @@ form{
 	font-size: 27px;
 	line-height: 32px;
 }
-.boxHeadingCR{
+.boxHeadingEDITPRF{
     width: 100%;
     height: 60px;
     color: white;
@@ -246,7 +247,7 @@ form{
     line-height: 65px;
     cursor: pointer;
 }
-.inputFieldUnderCR{
+.inputFieldUnderEDITPRF{
     width: 80%;
     height: 30px;
     margin: 0 auto;
@@ -258,16 +259,18 @@ form{
     color: white;
 
 }
-.buttonBoxCR{
+.buttonBoxEDITPRF{
 	width: 70%;
 	height: 70px;
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
+	text-align: center;
+	flex-direction: column;
 }
-.saveButtonCR{
+.saveButtonEDITPRF{
 
-	width: 250px;
+	width: 80%;
 	height: 46px;
 	background-color: #004225;
 	border: none;
@@ -284,36 +287,43 @@ form{
 	font-weight: 400;
 	line-height: normal;
 }
+.success{
+	color: rgb(20, 147, 13);
+}
 @media only screen and (max-width: 600px) {
-	.midBoxCR{
+	.saveButtonEDITPRF{
+		width: 90%;
+	}
+	.midBoxEDITPRF{
 		width: 80%;
 	}
-	.formBlockCR{
+	.formBlockEDITPRF{
 		width: 100%;
 	}
-	.inputFieldUnderCR{
-		width: 100%;
+	.inputFieldUnderEDITPRF{
+		width: 80%;
 	}
-	.img2CR{
+	.img2EDITPRF{
 		height: 35px;
 	}
-	.underMidCR{
+	.underMidEDITPRF{
+		margin-top: -12px;
+		margin-bottom: 20px;
 		height: 50px;
 		width: 100%;
 	}
-	.midLineCR{
+	.midLineEDITPRF{
 		width: 80%;
 		border: 2px solid #FFB000;
 	}
-	.midLine2CR{
+	.midLine2EDITPRF{
 		width: 100%;
 		border: 2px solid white;
-		margin-top: 10px;
 	}
-	.img1CR{
+	.img1EDITPRF{
 		height: 65px;
 	}
-	.boxHeadingCR{
+	.boxHeadingEDITPRF{
 		font-size: 22px;
 	}
 }

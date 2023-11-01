@@ -14,9 +14,8 @@ function HouseEdit(){
     return(
         
         <>
-        
-        <div className="containerMAIN4">
         <Menu/>
+        <div className="containerMAIN4">
       <div class="topHeadingMAIN4">
         <div class="mainHeadingTextBoxMAIN4">
           <img class="img1MAIN2" src={image} alt=""/>
@@ -36,7 +35,7 @@ function HouseEdit(){
 
 
       <div class="editContainerMAIN4">
-        <div class="topHeading2MAIN4">EDIT</div>
+        <div class="topHeading2MAIN4">EDIT OFFER</div>
         <div class="midContainerMAIN4">
           <div class="leftMAIN4">
             <div class="mainImageContainerMAIN4">
@@ -77,11 +76,9 @@ function HouseEdit(){
                     <div class="buttonBoxMAIN4">
                       <button class="saveButtonMAIN4">SAVE</button>
                     </div>
-
             </div>
         </div>
       </div>
-
     </div>
     </div>
     </>

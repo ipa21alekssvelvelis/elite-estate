@@ -1,10 +1,10 @@
 <?php
 include_once 'db.php';
 
-header("Access-Control-Allow-Origin: http://localhost:3000");
-header("Access-Control-Allow-Methods: POST");
-header("Access-Control-Allow-Headers: Content-Type");
 header('Content-Type: application/json');
+header("Access-Control-Allow-Origin: http://localhost:3000");
+header("Access-Control-Allow-Methods: GET, POST");
+header("Access-Control-Allow-Headers: Content-Type");
 
 $db = new Database();
 
@@ -36,7 +36,7 @@ if ($foundUser) {
             }
         }
         if($sellerExists){
-            $response["sellerid"] = $sellerData["userid"];
+            $response["sellerid"] = $sellerData["sellerid"];
         }
     } else {
         $response["error"] = "Password is incorrect";

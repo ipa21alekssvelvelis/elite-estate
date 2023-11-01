@@ -48,7 +48,7 @@ function Register(){
 
         if (Object.keys(newErrors).length === 0) {
         try {
-          const response = await fetch('http://localhost:8888/datubazes/estates/utilities/insertUsers.php', {
+          const response = await fetch('http://localhost:8888/datubazes/estate-main/elite-estate/utilities/insertUsers.php', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -84,12 +84,12 @@ function Register(){
         <>
 {/* <Menu/> */}
 
-<div class="topHeadingREG">
-        <div class="mainHeadingTextBoxREG">
-          <img class="img1REG" src={image} alt=""/>
+<div className="topHeadingREG">
+        <div className="mainHeadingTextBoxREG">
+          <img className="img1REG" src={image} alt=""/>
         </div>
       </div>
-      <div class="midLineREG"></div>
+      <div className="midLineREG"></div>
 
 <form className="loginBoxREG" onSubmit={handleSubmit}>
       <div className="loginHeadingREG">REGISTER</div>
